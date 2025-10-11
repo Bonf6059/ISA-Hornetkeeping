@@ -2,7 +2,7 @@
 <Defs>
 	
 	<SoundDef>
-		<defName>SV_VialBreak</defName>
+		<defName>ISA_VialBreak</defName>
 		<context>MapOnly</context>
 		<maxSimultaneous>1</maxSimultaneous>
 		<subSounds>
@@ -19,3 +19,4 @@
 	</SoundDef>
 
 </Defs>
+
