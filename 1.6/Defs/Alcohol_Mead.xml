@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="DankPyon_DrugBase">
-		<defName>SV_HornetMead</defName>
+	<ThingDef ParentName="ISA_DrugBase">
+		<defName>ISA_HornetMead</defName>
 		<label>hornet mead</label>
 		<description>Fermented hornet honey, a very strong and intoxicating alcohol. The potency is such that one drink can almost lead to a direct black out. Originating from the northern lands, it was brewed to keep oneself warm during the harsh winters.</description>
 		<graphicData>
@@ -48,14 +48,14 @@
 					<divideByBodySize>true</divideByBodySize>
 				</li>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>DankPyon_HornetHoneyHigh</hediffDef>
+					<hediffDef>ISA_HornetHoneyHigh</hediffDef>
 					<severity>0.2</severity>
 					<divideByBodySize>true</divideByBodySize>
 				</li>
 			<li Class="IngestionOutcomeDoer_OffsetNeed">
 					<need>Rest</need>
 					<offset>0.4</offset>
-					<toleranceChemical>DankPyon_HornetHoney</toleranceChemical>
+					<toleranceChemical>ISA_HornetHoney</toleranceChemical>
 				</li>
 			</outcomeDoers>
 		</ingestible>
@@ -76,7 +76,7 @@
 				<compClass>CompQuality</compClass>
 			</li>
 			<li Class="VEF.Cooking.CompProperties_IngestedThoughtFromQuality">
-				<ingestedThought>DankPyon_DrankWine</ingestedThought>
+				<ingestedThought>ISA_DrankWine</ingestedThought>
 			</li>
 			<li Class="VEF.Cooking.CompProperties_StackByQuality"/>
 		</comps>
@@ -86,14 +86,15 @@
 		</researchPrerequisites>
 	</ThingDef>
 
-	<ProcessorFramework.ProcessDef ParentName="DankPyon_Processor_AlcoholBase">
-		<defName>SV_HornetHoneyIntoMead</defName>
-		<thingDef>SV_HornetMead</thingDef>
+	<ProcessorFramework.ProcessDef ParentName="ISA_Processor_AlcoholBase">
+		<defName>ISA_HornetHoneyIntoMead</defName>
+		<thingDef>ISA_HornetMead</thingDef>
 		<ingredientFilter>
 			<thingDefs>
-				<li>DankPyon_HornetHoney</li>
+				<li>ISA_HornetHoney</li>
 			</thingDefs>
 		</ingredientFilter>
 	</ProcessorFramework.ProcessDef>
 	
+
 </Defs>
