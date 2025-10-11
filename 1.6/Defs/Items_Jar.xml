@@ -2,18 +2,18 @@
 <Defs>
 
 	<ThingDef ParentName="ApparelNoQualityBase">
-		<defName>SV_Apparel_DeathstingerJar</defName>
+		<defName>ISA_Apparel_DeathstingerJar</defName>
 		<label>deathstinger jars belt</label>
 		<description>A jar filled with very angry deathstingers. Throwing it will cause the jar to break, releasing a black swarm on those hit, slowing them and reducing their combat capabilities. Best to shake before tossing.</description>
 		<techLevel>Medieval</techLevel>
 		<researchPrerequisites>
-			<li>SV_Hornetkeeping</li>
+			<li>ISA_Hornetkeeping</li>
 		</researchPrerequisites>
 		
 		<comps>
 			<li Class="CompProperties_ApparelReloadable">
 				<maxCharges>3</maxCharges>
-				<ammoDef>SV_DeathstingerLarvae</ammoDef>
+				<ammoDef>ISA_DeathstingerLarvae</ammoDef>
 				<ammoCountToRefill>3</ammoCountToRefill>
 				<baseReloadTicks>120</baseReloadTicks>
 				<soundReload>Interact_MolotovCocktail</soundReload>
@@ -23,7 +23,7 @@
             </li>
             <li Class="CompProperties_Explosive">
                  <explosiveRadius>2.66</explosiveRadius>
-                 <explosiveDamageType>SV_Swarm</explosiveDamageType>
+                 <explosiveDamageType>ISA_Swarm</explosiveDamageType>
 				 
             </li>
 			
@@ -45,7 +45,7 @@
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
-				<defaultProjectile>SV_Proj_DeathstingerJar</defaultProjectile>
+				<defaultProjectile>ISA_Proj_DeathstingerJar</defaultProjectile>
 				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
 			</li>
 		</verbs>
@@ -62,7 +62,7 @@
 		</recipeMaker>
 		
 		<costList>
-			<SV_DeathstingerLarvae>5</SV_DeathstingerLarvae>
+			<ISA_DeathstingerLarvae>5</ISA_DeathstingerLarvae>
 		</costList>
 		
 		<graphicData>
@@ -141,7 +141,7 @@
 	
 	
 	<ThingDef ParentName="BaseIncendiaryProjectile">
-		<defName>SV_Proj_DeathstingerJar</defName>
+		<defName>ISA_Proj_DeathstingerJar</defName>
 		<label>deathstinger jar</label>
 		<graphicData>
 			<texPath>Things/Utility/DeathstingerJar/DeathstingerJar</texPath>
@@ -149,7 +149,7 @@
 		</graphicData>
 		<projectile>
 			<explosionRadius>2.5</explosionRadius>
-			<damageDef>SV_Swarm</damageDef>
+			<damageDef>ISA_Swarm</damageDef>
 			<preExplosionSpawnThingDef>Filth_Slime</preExplosionSpawnThingDef>
 			<ai_IsIncendiary>true</ai_IsIncendiary>
 			<shadowSize>0.6</shadowSize>
@@ -158,7 +158,7 @@
 	</ThingDef>
 	
 		<DamageDef ParentName="CutBase">
-		<defName>SV_Swarm</defName>
+		<defName>ISA_Swarm</defName>
 		<label>swarm</label>
 		<workerClass>DamageWorker_AddInjury</workerClass>
 		<armorCategory>Sharp</armorCategory>
@@ -167,10 +167,10 @@
 		<impactSoundType>Toxic</impactSoundType>
 		<explosionColorCenter>(206, 193, 97)</explosionColorCenter>
 		<explosionColorEdge>(206, 193, 97)</explosionColorEdge>
-		<soundExplosion>SV_VialBreak</soundExplosion>
+		<soundExplosion>ISA_VialBreak</soundExplosion>
 	    <additionalHediffs>
 			<li>
-				<hediff>SV_AngrySwarm</hediff>
+				<hediff>ISA_AngrySwarm</hediff>
 			</li>
 		</additionalHediffs>
 		<scaleDamageToBuildingsBasedOnFlammability>false</scaleDamageToBuildingsBasedOnFlammability>
@@ -179,7 +179,7 @@
 	  <!--=============== Hediff ================-->
 	
   <HediffDef>
-    <defName>SV_AngrySwarm</defName>
+    <defName>ISA_AngrySwarm</defName>
     <label>black swarm</label>
     <hediffClass>HediffWithComps</hediffClass>
     <description>Swarmed by angry deathstingers. They will slow the movement, and combat capacities of those unlucky enough to be near.</description>
@@ -198,7 +198,7 @@
        </li>
 	
 	  <li Class="HediffCompProperties_Effecter">
-        <stateEffecter>SV_DeathstingerSwarmed</stateEffecter>
+        <stateEffecter>ISA_DeathstingerSwarmed</stateEffecter>
         <severityIndices>0~1</severityIndices>
       </li>
     </comps>
@@ -211,7 +211,7 @@
           <hediffGivers>
              <li Class="HediffGiver_Random">
              <mtbDays>0.1</mtbDays>
-             <hediff>SV_DeathStinged</hediff>
+             <hediff>ISA_DeathStinged</hediff>
              </li>
     	  </hediffGivers>
 		  
@@ -233,4 +233,5 @@
   </HediffDef>
  
 	
+
 </Defs>
