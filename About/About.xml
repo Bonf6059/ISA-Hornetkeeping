@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>Medieval Overhaul : Hornetkeeping</name>
-	<author>SirVan</author>
+	<name>[ISA] Hornetkeeping</name>
+	<author>Bonfa6059</author>
 	<supportedVersions>
 		<li>1.6</li>
 	</supportedVersions>
 	<loadAfter>
-		<li>Ludeon.RimWorld</li>
-		<li>Ludeon.RimWorld.Royalty</li>
-		<li>Ludeon.RimWorld.Biotech</li>
-		<li>brrainz.harmony</li>
-		<li>DankPyon.Medieval.Overhaul</li>
+		<li>ISA.Medieval</li>
 	</loadAfter>
 	
 	<modDependencies>
 	  <li>
-		<packageId>DankPyon.Medieval.Overhaul</packageId>
-		<displayName>Medieval Overhaul</displayName>
-		<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=3219596926</steamWorkshopUrl>
+		<packageId>ISA.Medieval</packageId>
+		<displayName>ISA-Medieval</displayName>
 	  </li>
 	</modDependencies>
-	<packageId>van.hornetkeeping</packageId>
+	<packageId>ISA.hornetkeeping</packageId>
 	<description>A mod to expand a little bit on the deathstingers from medieval overhaul.</description>
 </ModMetaData>
+
