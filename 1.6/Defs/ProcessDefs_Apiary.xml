@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
  
-	<!-- Honey -->
+	<!-- Apiary -->
 	<ProcessorFramework.ProcessDef Name="ISA_ApiaryBase" Abstract="True">
-		<processDays>2</processDays><!-- in days, a day is 60,000 ticks -->
 		<capacityFactor>20.0</capacityFactor>
 		<efficiency>0.1</efficiency>
 		<usesTemperature>true</usesTemperature>
@@ -30,7 +29,19 @@
 
   <ProcessorFramework.ProcessDef ParentName="ISA_ApiaryBase">
 		<defName>ISA_MeatIntoHoney</defName>
-		<thingDef>ISA_ISA_HornetHoney</thingDef>
+		<thingDef>ISA_HornetHoney</thingDef>
+	  	<processDays>2</processDays><!-- in days, a day is 60,000 ticks -->
+		<ingredientFilter>
+			<thingCategoryDefs>
+				<li>Meat</li>
+			</thingCategoryDefs>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+
+  <ProcessorFramework.ProcessDef ParentName="ISA_ApiaryBase">
+		<defName>ISA_MeatIntoLarvae</defName>
+		<thingDef>ISA_DeathstingerLarvae</thingDef>
+	  	<processDays>5</processDays><!-- in days, a day is 60,000 ticks -->
 		<ingredientFilter>
 			<thingCategoryDefs>
 				<li>Meat</li>
