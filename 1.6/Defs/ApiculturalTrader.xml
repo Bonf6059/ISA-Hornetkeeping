@@ -58,6 +58,7 @@
 
 	    <li Class="StockGenerator_Category">
         <categoryDef>MeatRaw</categoryDef>
+		<countRange>35~500</countRange>
       </li>
 
       <!-- Buying -->
