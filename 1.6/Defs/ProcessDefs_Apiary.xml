@@ -32,9 +32,10 @@
 		<thingDef>ISA_HornetHoney</thingDef>
 	  	<processDays>2</processDays><!-- in days, a day is 60,000 ticks -->
 		<ingredientFilter>
-			<thingCategoryDefs>
-				<li>Meat</li>
-			</thingCategoryDefs>
+			<categories>
+				<li>MeatRaw</li>
+				<li>Fish</li>
+			</categories>
 		</ingredientFilter>
 	</ProcessorFramework.ProcessDef>
 
