@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchProjectDef>
+		<defName>SV_Hornetkeeping</defName>
+		<label>hornetkeeping</label>
+		<description>Learn to create specialized apiaries, brew mead out of hornet honey and bottle up deathstingers to spread chaos amongst enemy lines.</description>
+		<baseCost>500</baseCost>
+		<tab>DankPyon_MedievalResearchTab</tab>
+		<techLevel>Medieval</techLevel>
+        <researchViewX>4.00</researchViewX>
+        <researchViewY>2.40</researchViewY>
+		<prerequisites>
+			<li>DankPyon_RusticFurniture</li>
+		</prerequisites>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->hornetkeeping</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+	
+</Defs>

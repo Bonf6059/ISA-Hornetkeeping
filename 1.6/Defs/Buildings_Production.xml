@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>SV_DeathstingerApiary</defName>
+		<label>deathstinger apiary</label>
+		<description>An apiary occupied by deathstingers. It is less dangerous than a natural hive, whilst also being much slower at producing honey. Deathstinger drones will protect it to the best of their ability, swarming and stinging anything that stays in their territory for too long.\n\nDeathstingers can reproduce and quickly breed without a queen, making them a common and dangerous pest.</description>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Building/DeathstingerApiary</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<uiIconScale>0.65</uiIconScale>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>true</rotatable>
+		<fillPercent>0.5</fillPercent>
+		<designationCategory>Production</designationCategory>
+		<researchPrerequisites>
+			<li>SV_Hornetkeeping</li>
+		</researchPrerequisites>
+		
+        <costStuffCount>60</costStuffCount>
+        <stuffCategories>
+          <li>Woody</li>
+        </stuffCategories>
+		<costList>
+			<SV_DeathstingerLarvae>5</SV_DeathstingerLarvae>
+		</costList>
+		
+		<statBases>
+			<MaxHitPoints>130</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		
+		<pathCost>42</pathCost>
+		<receivesSignals>true</receivesSignals>
+		<blockWind>true</blockWind>
+		<tickerType>Normal</tickerType>
+		<passability>PassThroughOnly</passability>
+		
+		<comps>
+			<li Class="CompProperties_SelfhealHitpoints">
+				<ticksPerHeal>6000</ticksPerHeal><!-- 60k ticks = 1 day, 10 hp per day -->
+			</li>
+			<li Class="CompProperties_AmbientSound">
+				<sound>SV_Apiary_Ambience</sound>
+			</li>
+			<li Class="MedievalOverhaul.CompProperties_ThingProducer">
+				<requireFuelCustom>true</requireFuelCustom>
+				<restAtNight>true</restAtNight>
+				<viableTempRange>13,37</viableTempRange>
+				<timeRequired>120000</timeRequired>				<!-- 60 000 ticks equal 1 day-->
+				<random>false</random>
+				<items>
+					<li>
+						<thingDef>DankPyon_HornetHoney</thingDef>
+						<countRange>1~2</countRange>
+						<weight>1</weight>
+					</li>
+					<li>
+						<thingDef>SV_DeathstingerLarvae</thingDef>
+						<countRange>-15~2</countRange>
+						<weight>1</weight>
+					</li>
+				</items>
+			</li>
+			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
+				<fuelConsumptionRate>20</fuelConsumptionRate>
+				<fuelCapacity>200</fuelCapacity>
+				<autoRefuelPercent>0.3</autoRefuelPercent>
+				<initialFuelPercent>0</initialFuelPercent>
+				<fuelConsumptionPerTickInRain>0.00006</fuelConsumptionPerTickInRain>
+				<fuelFilter>
+					<categories>
+						<li>MeatRaw</li>
+					</categories>
+				</fuelFilter>
+				<defaultIngredientFilter>
+					<disallowedCategories>
+						<li>EggsFertilized</li>
+					</disallowedCategories>
+				</defaultIngredientFilter>
+				<consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed>
+				<destroyOnNoFuel>false</destroyOnNoFuel>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+				<showFuelGizmo>true</showFuelGizmo>
+				<drawOutOfFuelOverlay>true</drawOutOfFuelOverlay>
+				<fuelIconPath>UI/EmptyMeat_Icon</fuelIconPath>
+				<fuelGizmoLabel>Meat</fuelGizmoLabel>
+			</li>
+			
+			
+			<li Class="CompProperties_HeatPusher">
+				<heatPerSecond>6</heatPerSecond>
+				<heatPushMaxTemperature>38</heatPushMaxTemperature>
+			</li>
+			<li Class="CompProperties_CauseHediff_AoE">
+				<hediff>SV_Swarmed</hediff>
+				<range>5</range>
+			</li>
+			<li Class="CompProperties_SpawnerFilth">
+				<filthDef>Filth_Slime</filthDef>
+				<spawnMtbHours>4</spawnMtbHours>
+				<spawnRadius>5</spawnRadius>
+			</li>
+            <li Class="CompProperties_MoteEmitter">
+               <mote>SV_DeathstingerSwarm</mote>
+               <emissionInterval>80</emissionInterval>
+            </li>
+	  
+		</comps>
+	</ThingDef>
+	
+  <ThingDef ParentName="MoteBase">
+    <defName>SV_DeathstingerSwarm</defName>
+    <graphicData>
+      <texPath>Things/Mote/StingerSwarm</texPath>
+	  <graphicClass>Graphic_MoteRandom</graphicClass>
+      <drawSize>1.7</drawSize>	  
+    </graphicData>
+    <thingClass>MoteThrownAttached</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.2</fadeInTime>
+      <solidTime>0.5</solidTime>
+      <fadeOutTime>0.6</fadeOutTime>
+      <attachedDrawOffset>(0.2, 0, 0.2)</attachedDrawOffset>
+    </mote>
+  </ThingDef>
+  
+    <EffecterDef>
+    <defName>SV_DeathstingerSwarmed</defName>
+    <offsetMode>Free</offsetMode>
+    <children>
+
+      <li>
+        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+        <moteDef>SV_DeathstingerSwarm</moteDef>
+        <burstCount>1</burstCount>
+        <ticksBetweenMotes>5000</ticksBetweenMotes>
+        <positionRadius>0</positionRadius>
+        <scale>1</scale>
+        <positionOffset>(0, 0, 0.15)</positionOffset>
+        <rotation>-50~50</rotation>
+        <rotationRate>0</rotationRate>
+        <absoluteAngle>True</absoluteAngle>
+        <fleckUsesAngleForVelocity>false</fleckUsesAngleForVelocity>
+        <speed>0.18~0.18</speed>
+      </li>
+
+    </children>
+  </EffecterDef>  
+  
+  <HediffDef>
+    <defName>SV_Swarmed</defName>
+    <label>swarm</label>
+    <hediffClass>HediffWithComps</hediffClass>
+    <description>Swarmed by deathstingers. They will slow people down, and occassionally sting.</description>
+	<defaultLabelColor>(118,112,110)</defaultLabelColor>
+    <everCurableByItem>false</everCurableByItem>
+    <scenarioCanAdd>false</scenarioCanAdd>
+	<initialSeverity>0.9</initialSeverity>
+    <maxSeverity>1</maxSeverity>
+    <isBad>false</isBad>
+	
+    <comps>
+	
+        <li Class="HediffCompProperties_Disappears">
+            <disappearsAfterTicks>3000</disappearsAfterTicks>
+	        <showRemainingTime>False</showRemainingTime>
+       </li>
+	
+	  <li Class="HediffCompProperties_Effecter">
+        <stateEffecter>SV_DeathstingerSwarmed</stateEffecter>
+        <severityIndices>0~1</severityIndices>
+      </li>
+    </comps>
+	
+    <stages>
+	  
+      <li>
+        <minSeverity>0.8</minSeverity>
+		
+          <hediffGivers>
+             <li Class="HediffGiver_Random">
+             <mtbDays>0.5</mtbDays>
+             <hediff>SV_DeathStinged</hediff>
+             </li>
+    	  </hediffGivers>
+		  
+		
+          <capMods>
+            <li>
+              <capacity>Moving</capacity>
+              <offset>-0.20</offset>
+            </li>
+          </capMods>
+      </li>
+    </stages>
+
+  </HediffDef>
+  
+    <HediffDef>
+    <defName>SV_DeathStinged</defName>
+    <label>black rash</label>
+    <hediffClass>HediffWithComps</hediffClass>
+    <description>A painful dark rash caused by the poison of a deathstinger drone. Will disappear after one to two days.</description>
+	<defaultLabelColor>(118,112,110)</defaultLabelColor>
+    <everCurableByItem>false</everCurableByItem>
+    <scenarioCanAdd>false</scenarioCanAdd>
+	<isInfection>true</isInfection>
+	<minSeverity>0.1</minSeverity>
+    <maxSeverity>1</maxSeverity>
+    <isBad>false</isBad>
+	
+	
+    <comps>
+	
+        <li Class="HediffCompProperties_Disappears">
+            <disappearsAfterTicks>60000~120000</disappearsAfterTicks>
+	        <showRemainingTime>False</showRemainingTime>
+       </li>
+	
+    </comps>
+	
+    <stages>
+	  
+      <li>
+        <minSeverity>0.8</minSeverity>
+		<painOffset>0.2</painOffset>
+		
+          <capMods>
+            <li>
+              <capacity>Moving</capacity>
+              <offset>-0.10</offset>
+            </li>
+          </capMods>
+      </li>
+    </stages>
+
+  </HediffDef>
+</Defs>

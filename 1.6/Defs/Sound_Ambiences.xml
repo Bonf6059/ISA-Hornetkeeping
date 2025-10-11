@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<SoundDef>
+		<defName>SV_Apiary_Ambience</defName>
+		<sustain>True</sustain>
+		<context>MapOnly</context>
+		<eventNames/>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+			<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>ApiarySound_loop</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>15</min>
+					<max>35</max>
+				</volumeRange>
+				<distRange>
+					<min>0</min>
+					<max>20</max>
+				</distRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+</Defs>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>SV_DeathstingerLarvae</defName>
+    <label>deathstinger larvae</label>
+    <description>The bottled larvae extracted from a deathstinger hive. Contrary to common beliefs, deathstinger hives can operate and thrive without a queen. Can be used to make a deathstinger apiary.</description>
+    <possessionCount>1</possessionCount>
+	
+    <graphicData>
+      <texPath>Things/DeathstingerLarvae</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+    <statBases>
+      <MarketValue>240</MarketValue>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>0.9</Mass>
+      <Flammability>1</Flammability>
+      <DeteriorationRate>2</DeteriorationRate>
+    </statBases>
+	
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <stackLimit>5</stackLimit>
+	
+    <thingCategories>
+      <li>ItemsMisc</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingSetMakerTags>
+      <li>AnimalPart</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+
+</Defs>
+
