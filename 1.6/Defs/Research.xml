@@ -6,7 +6,7 @@
 		<label>hornetkeeping</label>
 		<description>Learn to create specialized apiaries, brew mead out of hornet honey and bottle up deathstingers to spread chaos amongst enemy lines.</description>
 		<baseCost>500</baseCost>
-		<tab>ISA__MedievalResearchTab</tab>
+		<tab>ISA_MedievalResearchTab</tab>
 		<techLevel>Medieval</techLevel>
         <researchViewX>4.00</researchViewX>
         <researchViewY>2.40</researchViewY>
@@ -16,4 +16,5 @@
 	</ResearchProjectDef>
 	
 </Defs>
+
 
