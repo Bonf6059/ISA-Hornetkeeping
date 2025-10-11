@@ -11,7 +11,7 @@
 			<HediffDef>ISA_HornetHoneyAddiction</HediffDef>
 		</descriptionHyperlinks>
 		<graphicData>
-			<texPath>Things/Item/Drug/HornetHoney</texPath>
+			<texPath>ThingsHornetHoney</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<rotatable>false</rotatable>
