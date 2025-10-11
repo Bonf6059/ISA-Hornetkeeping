@@ -2,25 +2,28 @@
 
 <Patch>
 
-	<Operation Class="PatchOperationAdd">
-	  <xpath>Defs/ThingDef[defName = "DankPyon_HornetNest"]/killedLeavings</xpath>
-	  <value>
-		<SV_DeathstingerLarvae>3</SV_DeathstingerLarvae>
-	  </value>
-	</Operation> 
-	
-    <Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="BarrelProcessor"]/comps/li[1]/processes</xpath>
-		<value>
-			<li>SV_HornetHoneyIntoMead</li>
-		</value>
-	</Operation>
-	
-    <Operation Class="PatchOperationReplace">
-		<xpath>Defs/PawnKindDef[defName="DankPyon_Deathstinger"]/label</xpath>
-		<value>
-			<label>deathstinger soldier</label>
-		</value>
-	</Operation>
+<!--========== TRADERS ==========-->
+  
+  <!-- Add new caravan -->      <!-- Thank you Criz#2714 for the help with this patch -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/caravanTraderKinds</xpath>
+    <value>
+    <li>ISA_Caravan_Apiculture</li>
+    </value>
+  </Operation>
 
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/FactionDef[@Name="VFEM2_VikingBase"]/caravanTraderKinds</xpath>
+    <value>
+    <li>ISA_Caravan_Apiculture</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/FactionDef[@Name="VFEM2_MedievalFactionBase"]/caravanTraderKinds</xpath>
+    <value>
+    <li>ISA_Caravan_Apiculture</li>
+    </value>
+  </Operation>
 </Patch>
+
