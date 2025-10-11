@@ -68,7 +68,7 @@
 
 	<HediffDef>
 		<defName>ISA_HornetHoneyHigh</defName>
-<!--		<hediffClass>MedievalOverhaul.Hediff_UnpleasantAftermathSet</hediffClass>	-->
+		<hediffClass>ISA.Hediff_UnpleasantAftermathSet</hediffClass>	
 		<label>high on hornet honey</label>
 		<labelNoun>a hornet honey high</labelNoun>
 		<description>Hornet honey in the bloodstream. It supercharges combat-related abilities, and instantly increases psyfocus when first consumed.</description>
@@ -248,7 +248,7 @@
 		<label>unpleasant aftermath</label>
 		<labelNoun>an unpleasant aftermath</labelNoun>
 		<description>An unpleasant delayed after-effect of drug intoxication.</description>
-		<hediffClass>MedievalOverhaul.Hediff_UnpleasantAftermath</hediffClass>
+		<hediffClass>ISA.Hediff_UnpleasantAftermath</hediffClass>
 		<initialSeverity>1</initialSeverity>
 		<scenarioCanAdd>true</scenarioCanAdd>
 		<comps>
