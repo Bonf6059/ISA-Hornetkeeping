@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="ISA_DrugBase">
+	<ThingDef ParentName="DrugBase">
 		<defName>ISA_HornetMead</defName>
 		<label>hornet mead</label>
 		<description>Fermented hornet honey, a very strong and intoxicating alcohol. The potency is such that one drink can almost lead to a direct black out. Originating from the northern lands, it was brewed to keep oneself warm during the harsh winters.</description>
@@ -98,3 +98,4 @@
 	
 
 </Defs>
+
