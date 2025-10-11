@@ -47,51 +47,20 @@
 			<li Class="CompProperties_AmbientSound">
 				<sound>ISA_Apiary_Ambience</sound>
 			</li>
-			<li Class="MedievalOverhaul.CompProperties_ThingProducer">
-				<requireFuelCustom>true</requireFuelCustom>
-				<restAtNight>true</restAtNight>
-				<viableTempRange>13,37</viableTempRange>
-				<timeRequired>120000</timeRequired>				<!-- 60 000 ticks equal 1 day-->
-				<random>false</random>
-				<items>
-					<li>
-						<thingDef>ISA_HornetHoney</thingDef>
-						<countRange>1~2</countRange>
-						<weight>1</weight>
-					</li>
-					<li>
-						<thingDef>ISA_DeathstingerLarvae</thingDef>
-						<countRange>-15~2</countRange>
-						<weight>1</weight>
-					</li>
-				</items>
-			</li>
-			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
-				<fuelConsumptionRate>20</fuelConsumptionRate>
-				<fuelCapacity>200</fuelCapacity>
-				<autoRefuelPercent>0.3</autoRefuelPercent>
-				<initialFuelPercent>0</initialFuelPercent>
-				<fuelConsumptionPerTickInRain>0.00006</fuelConsumptionPerTickInRain>
-				<fuelFilter>
-					<categories>
-						<li>MeatRaw</li>
-					</categories>
-				</fuelFilter>
-				<defaultIngredientFilter>
-					<disallowedCategories>
-						<li>EggsFertilized</li>
-					</disallowedCategories>
-				</defaultIngredientFilter>
-				<consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed>
-				<destroyOnNoFuel>false</destroyOnNoFuel>
-				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
-				<showFuelGizmo>true</showFuelGizmo>
-				<drawOutOfFuelOverlay>true</drawOutOfFuelOverlay>
-				<fuelIconPath>UI/EmptyMeat_Icon</fuelIconPath>
-				<fuelGizmoLabel>Meat</fuelGizmoLabel>
-			</li>
-			
-			
+			<li Class="ProcessorFramework.CompProperties_Processor">
+				<capacity>1</capacity>
+				<independentProcesses>false</independentProcesses>
+				<parallelProcesses>false</parallelProcesses>
+				<dropIngredients>false</dropIngredients>
+				<showProductIcon>false</showProductIcon>
+				<barOffset>(0.0, 0.25)</barOffset>
+				<barScale>(1.0, 1.0)</barScale>
+				<colorCoded>false</colorCoded>
+				<processes>
+					<li>ISA_MeatIntoHoney</li>
+					<li>ISA_MeatIntoLarvae</li>
+				</processes>
+			</li>	
 			<li Class="CompProperties_HeatPusher">
 				<heatPerSecond>6</heatPerSecond>
 				<heatPushMaxTemperature>38</heatPushMaxTemperature>
@@ -242,5 +211,6 @@
 
   </HediffDef>
 </Defs>
+
 
 
