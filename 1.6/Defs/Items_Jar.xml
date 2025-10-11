@@ -52,7 +52,8 @@
 		
 		<recipeMaker>
 			<recipeUsers>
-				<li>DankPyon_AlchemyBench</li>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
 			</recipeUsers>
 			<useIngredientsForColor>false</useIngredientsForColor>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -235,3 +236,4 @@
 	
 
 </Defs>
+
