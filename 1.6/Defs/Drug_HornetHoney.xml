@@ -68,7 +68,7 @@
 
 	<HediffDef>
 		<defName>ISA_HornetHoneyHigh</defName>
-		<hediffClass>MedievalOverhaul.Hediff_UnpleasantAftermathSet</hediffClass>
+<!--		<hediffClass>MedievalOverhaul.Hediff_UnpleasantAftermathSet</hediffClass>	-->
 		<label>high on hornet honey</label>
 		<labelNoun>a hornet honey high</labelNoun>
 		<description>Hornet honey in the bloodstream. It supercharges combat-related abilities, and instantly increases psyfocus when first consumed.</description>
