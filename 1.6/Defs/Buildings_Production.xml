@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThingDef ParentName="BuildingBase">
-		<defName>SV_DeathstingerApiary</defName>
+		<defName>ISA_DeathstingerApiary</defName>
 		<label>deathstinger apiary</label>
 		<description>An apiary occupied by deathstingers. It is less dangerous than a natural hive, whilst also being much slower at producing honey. Deathstinger drones will protect it to the best of their ability, swarming and stinging anything that stays in their territory for too long.\n\nDeathstingers can reproduce and quickly breed without a queen, making them a common and dangerous pest.</description>
 		<thingClass>Building</thingClass>
@@ -18,7 +18,7 @@
 		<fillPercent>0.5</fillPercent>
 		<designationCategory>Production</designationCategory>
 		<researchPrerequisites>
-			<li>SV_Hornetkeeping</li>
+			<li>ISA_Hornetkeeping</li>
 		</researchPrerequisites>
 		
         <costStuffCount>60</costStuffCount>
@@ -26,7 +26,7 @@
           <li>Woody</li>
         </stuffCategories>
 		<costList>
-			<SV_DeathstingerLarvae>5</SV_DeathstingerLarvae>
+			<ISA_DeathstingerLarvae>5</ISA_DeathstingerLarvae>
 		</costList>
 		
 		<statBases>
@@ -45,7 +45,7 @@
 				<ticksPerHeal>6000</ticksPerHeal><!-- 60k ticks = 1 day, 10 hp per day -->
 			</li>
 			<li Class="CompProperties_AmbientSound">
-				<sound>SV_Apiary_Ambience</sound>
+				<sound>ISA_Apiary_Ambience</sound>
 			</li>
 			<li Class="MedievalOverhaul.CompProperties_ThingProducer">
 				<requireFuelCustom>true</requireFuelCustom>
@@ -60,7 +60,7 @@
 						<weight>1</weight>
 					</li>
 					<li>
-						<thingDef>SV_DeathstingerLarvae</thingDef>
+						<thingDef>ISA_DeathstingerLarvae</thingDef>
 						<countRange>-15~2</countRange>
 						<weight>1</weight>
 					</li>
@@ -97,7 +97,7 @@
 				<heatPushMaxTemperature>38</heatPushMaxTemperature>
 			</li>
 			<li Class="CompProperties_CauseHediff_AoE">
-				<hediff>SV_Swarmed</hediff>
+				<hediff>ISA_Swarmed</hediff>
 				<range>5</range>
 			</li>
 			<li Class="CompProperties_SpawnerFilth">
@@ -106,7 +106,7 @@
 				<spawnRadius>5</spawnRadius>
 			</li>
             <li Class="CompProperties_MoteEmitter">
-               <mote>SV_DeathstingerSwarm</mote>
+               <mote>ISA_DeathstingerSwarm</mote>
                <emissionInterval>80</emissionInterval>
             </li>
 	  
@@ -114,7 +114,7 @@
 	</ThingDef>
 	
   <ThingDef ParentName="MoteBase">
-    <defName>SV_DeathstingerSwarm</defName>
+    <defName>ISA_DeathstingerSwarm</defName>
     <graphicData>
       <texPath>Things/Mote/StingerSwarm</texPath>
 	  <graphicClass>Graphic_MoteRandom</graphicClass>
@@ -131,13 +131,13 @@
   </ThingDef>
   
     <EffecterDef>
-    <defName>SV_DeathstingerSwarmed</defName>
+    <defName>ISA_DeathstingerSwarmed</defName>
     <offsetMode>Free</offsetMode>
     <children>
 
       <li>
         <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
-        <moteDef>SV_DeathstingerSwarm</moteDef>
+        <moteDef>ISA_DeathstingerSwarm</moteDef>
         <burstCount>1</burstCount>
         <ticksBetweenMotes>5000</ticksBetweenMotes>
         <positionRadius>0</positionRadius>
@@ -154,7 +154,7 @@
   </EffecterDef>  
   
   <HediffDef>
-    <defName>SV_Swarmed</defName>
+    <defName>ISA_Swarmed</defName>
     <label>swarm</label>
     <hediffClass>HediffWithComps</hediffClass>
     <description>Swarmed by deathstingers. They will slow people down, and occassionally sting.</description>
@@ -173,7 +173,7 @@
        </li>
 	
 	  <li Class="HediffCompProperties_Effecter">
-        <stateEffecter>SV_DeathstingerSwarmed</stateEffecter>
+        <stateEffecter>ISA_DeathstingerSwarmed</stateEffecter>
         <severityIndices>0~1</severityIndices>
       </li>
     </comps>
@@ -186,7 +186,7 @@
           <hediffGivers>
              <li Class="HediffGiver_Random">
              <mtbDays>0.5</mtbDays>
-             <hediff>SV_DeathStinged</hediff>
+             <hediff>ISA_DeathStinged</hediff>
              </li>
     	  </hediffGivers>
 		  
@@ -203,7 +203,7 @@
   </HediffDef>
   
     <HediffDef>
-    <defName>SV_DeathStinged</defName>
+    <defName>ISA_DeathStinged</defName>
     <label>black rash</label>
     <hediffClass>HediffWithComps</hediffClass>
     <description>A painful dark rash caused by the poison of a deathstinger drone. Will disappear after one to two days.</description>
@@ -242,3 +242,4 @@
 
   </HediffDef>
 </Defs>
+
