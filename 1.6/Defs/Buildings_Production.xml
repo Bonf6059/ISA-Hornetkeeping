@@ -42,6 +42,7 @@
 		<passability>PassThroughOnly</passability>
 		
 		<comps>
+			<li Class="CompProperties_Forbiddable"/>
 			<li Class="CompProperties_SelfhealHitpoints">
 				<ticksPerHeal>6000</ticksPerHeal><!-- 60k ticks = 1 day, 10 hp per day -->
 			</li>
@@ -49,7 +50,7 @@
 				<sound>ISA_Apiary_Ambience</sound>
 			</li>
 			<li Class="ProcessorFramework.CompProperties_Processor">
-				<capacity>1</capacity>
+				<capacity>20</capacity>
 				<independentProcesses>false</independentProcesses>
 				<parallelProcesses>false</parallelProcesses>
 				<dropIngredients>false</dropIngredients>
@@ -212,6 +213,7 @@
 
   </HediffDef>
 </Defs>
+
 
 
 
