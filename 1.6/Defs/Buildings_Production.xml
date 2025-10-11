@@ -55,7 +55,7 @@
 				<random>false</random>
 				<items>
 					<li>
-						<thingDef>DankPyon_HornetHoney</thingDef>
+						<thingDef>ISA_HornetHoney</thingDef>
 						<countRange>1~2</countRange>
 						<weight>1</weight>
 					</li>
@@ -242,4 +242,5 @@
 
   </HediffDef>
 </Defs>
+
 
