@@ -7,6 +7,7 @@
 		<description>An apiary occupied by deathstingers. It is less dangerous than a natural hive, whilst also being much slower at producing honey. Deathstinger drones will protect it to the best of their ability, swarming and stinging anything that stays in their territory for too long.\n\nDeathstingers can reproduce and quickly breed without a queen, making them a common and dangerous pest.</description>
 		<thingClass>Building</thingClass>
 		<graphicData>
+			<drawerType>MapMeshAndRealTime</drawerType>
 			<texPath>Things/Building/DeathstingerApiary</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
@@ -211,6 +212,7 @@
 
   </HediffDef>
 </Defs>
+
 
 
 
