@@ -54,6 +54,7 @@
 			<recipeUsers>
 				<li>ElectricSmithy</li>
 				<li>FueledSmithy</li>
+				<li>VFEM2_AlchemicalWorkbench</li>
 			</recipeUsers>
 			<useIngredientsForColor>false</useIngredientsForColor>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -236,4 +237,5 @@
 	
 
 </Defs>
+
 
