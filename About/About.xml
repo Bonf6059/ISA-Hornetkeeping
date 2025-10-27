@@ -2,12 +2,13 @@
 <ModMetaData>
 	<name>[ISA] Hornetkeeping</name>
 	<author>Bonfa6059</author>
+	<modIconPath IgnoreIfNoMatchingField="True">UI/ISA_Logo</modIconPath>
 	<supportedVersions>
 		<li>1.6</li>
 	</supportedVersions>
-	<loadAfter>
+<!--	<loadAfter>
 		<li>ISA.Medieval</li>
-	</loadAfter>
+	</loadAfter>	-->
 	
 	<modDependencies>
 	  <li>
@@ -19,5 +20,6 @@
 	<packageId>ISA.hornetkeeping</packageId>
 	<description>A mod to expand a little bit on the deathstingers from medieval overhaul.</description>
 </ModMetaData>
+
 
 
