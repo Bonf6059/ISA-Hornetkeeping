@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-<!-- Add mead to Fermenting Barrel -->
+<!-- Add hornet mead to Fermenting Barrel -->
 	
-  <Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName= "BarrelProcessor"]/comps/li[@Class="ProcessorFramework.CompProperties_Processor"]/processes</xpath>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="BarrelProcessor"]/comps/li[1]/processes</xpath>
 		<value>
-  			<li>ISA_HornetHoneyIntoMead</li>
+			<li>ISA_HornetHoneyIntoMead</li>
 		</value>
 	</Operation>
 
