@@ -8,7 +8,7 @@
 		<label>distilling honey</label>
 		<description>Boil honet honey to remove the dangerous properties leaving a honey like substance indistinguishable from the real thing.</description>
 		<jobString>distilling honey.</jobString>
-    <workAmount>150</workAmount>
+   		<workAmount>150</workAmount>
 		<ingredients>
 			<li>
 				<filter>
@@ -28,5 +28,8 @@
 			<VFEM2_Honey>5</VFEM2_Honey>
 		</products>
 	</RecipeDef>
-
+	<recipeUsers>
+		<li>VFEM2_AlchemicalWorkbench</li>
+		<li>VFEM2_AlchemicalWorkbench_Electric</li>
+	</recipeUsers>
 </Defs>
