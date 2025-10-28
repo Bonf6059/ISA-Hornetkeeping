@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-<!-- Electric & Fueled draught lab -->
+<!-- Electric & Fueled stove -->
 	
   <Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName= "VFEM2_AlchemicalWorkbench"]/recipes</xpath>
+		<xpath>Defs/ThingDef[defName= "ElectricStove"]/recipes</xpath>
 		<value>
   			<li>ISA_MakeHoney</li>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName= "VFEM2_AlchemicalWorkbench_Electric"]/recipes</xpath>
+		<xpath>Defs/ThingDef[defName= "FueledStove"]/recipes</xpath>
 		<value>
   			<li>ISA_MakeHoney</li>
 		</value>
