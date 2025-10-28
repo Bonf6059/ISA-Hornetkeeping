@@ -28,8 +28,4 @@
 			<VFEM2_Honey>5</VFEM2_Honey>
 		</products>
 	</RecipeDef>
-	<recipeUsers>
-		<li>VFEM2_AlchemicalWorkbench</li>
-		<li>VFEM2_AlchemicalWorkbench_Electric</li>
-	</recipeUsers>
 </Defs>
