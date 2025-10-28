@@ -69,7 +69,7 @@
 			</li>
 			<li Class="CompProperties_CauseHediff_AoE">
 				<hediff>ISA_Swarmed</hediff>
-				<range>5</range>
+				<range>2</range>
 			</li>
 			<li Class="CompProperties_SpawnerFilth">
 				<filthDef>Filth_Slime</filthDef>
@@ -213,6 +213,7 @@
 
   </HediffDef>
 </Defs>
+
 
 
 
