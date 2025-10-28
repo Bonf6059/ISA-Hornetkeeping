@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Distilling honey -->
+	
+	<RecipeDef ParentName="CookMealBase">
+		<defName>ISA_MakeHoney</defName>
+		<label>distilling honey</label>
+		<description>Boil honet honey to remove the dangerous properties leaving a honey like substance indistinguishable from the real thing.</description>
+		<jobString>distilling honey.</jobString>
+    <workAmount>150</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ISA_HornetHoney</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ISA_HornetHoney</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<VFEM2_Honey>5</VFEM2_Honey>
+		</products>
+	</RecipeDef>
+  <workSkill>Cooking</workSkill>
+
+</Defs>
