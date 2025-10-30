@@ -27,5 +27,14 @@
 		<products>
 			<VFEM2_Honey>5</VFEM2_Honey>
 		</products>
+<!--		<recipeMaker Inherit="false">
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Cooking</workSkill>
+			<effectWorking>Cook</effectWorking>
+			<soundWorking>Recipe_Cook</soundWorking>
+			<recipeUsers Inherit="False">
+				<li>VFEM2_AlchemicalWorkbench</li>
+			</recipeUsers>
+		</recipeMaker>	-->
 	</RecipeDef>
 </Defs>
