@@ -19,7 +19,7 @@
 		<fillPercent>0.5</fillPercent>
 		<designationCategory>Production</designationCategory>
 		<researchPrerequisites>
-			<li>ISA_Hornetkeeping</li>
+			<li>ISA_Agriculture</li>
 		</researchPrerequisites>
 		
         <costStuffCount>60</costStuffCount>
@@ -213,6 +213,7 @@
 
   </HediffDef>
 </Defs>
+
 
 
 
