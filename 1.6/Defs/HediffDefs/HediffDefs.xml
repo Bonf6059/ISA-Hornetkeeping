@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-
+<!-- Gli hediff di HornetHoney è dentro con l'item -->
+	
   <HediffDef>
     <defName>ISA_AngrySwarm</defName>
     <label>black swarm</label>
