@@ -61,6 +61,7 @@
 				<processes>
 					<li>ISA_MeatIntoHoney</li>
 					<li>ISA_MeatIntoLarvae</li>
+					<li>ISA_MeatIntoVFEM2Honey</li>
 				</processes>
 			</li>	
 			<li Class="CompProperties_HeatPusher">
@@ -213,6 +214,7 @@
 
   </HediffDef>
 </Defs>
+
 
 
 
