@@ -159,7 +159,7 @@
 		</projectile>
 	</ThingDef>
 	
-		<DamageDef ParentName="CutBase">
+	<DamageDef ParentName="CutBase">
 		<defName>ISA_Swarm</defName>
 		<label>swarm</label>
 		<workerClass>DamageWorker_AddInjury</workerClass>
@@ -176,66 +176,9 @@
 			</li>
 		</additionalHediffs>
 		<scaleDamageToBuildingsBasedOnFlammability>false</scaleDamageToBuildingsBasedOnFlammability>
-	</DamageDef>
-	
-	  <!--=============== Hediff ================-->
-	
-  <HediffDef>
-    <defName>ISA_AngrySwarm</defName>
-    <label>black swarm</label>
-    <hediffClass>HediffWithComps</hediffClass>
-    <description>Swarmed by angry deathstingers. They will slow the movement, and combat capacities of those unlucky enough to be near.</description>
-	<defaultLabelColor>(118,112,110)</defaultLabelColor>
-    <everCurableByItem>false</everCurableByItem>
-    <scenarioCanAdd>false</scenarioCanAdd>
-	<initialSeverity>0.9</initialSeverity>
-    <maxSeverity>1</maxSeverity>
-    <isBad>false</isBad>
-	
-    <comps>
-	
-        <li Class="HediffCompProperties_Disappears">
-            <disappearsAfterTicks>5000</disappearsAfterTicks>
-	        <showRemainingTime>False</showRemainingTime>
-       </li>
-	
-	  <li Class="HediffCompProperties_Effecter">
-        <stateEffecter>ISA_DeathstingerSwarmed</stateEffecter>
-        <severityIndices>0~1</severityIndices>
-      </li>
-    </comps>
-	
-    <stages>
-	  
-      <li>
-        <minSeverity>0.8</minSeverity>
-		
-          <hediffGivers>
-             <li Class="HediffGiver_Random">
-             <mtbDays>0.1</mtbDays>
-             <hediff>ISA_DeathStinged</hediff>
-             </li>
-    	  </hediffGivers>
-		  
-          <statFactors>
-          <MeleeDodgeChance>0.5</MeleeDodgeChance>
-		  <MeleeHitChance>0.35</MeleeHitChance>
-		  <ShootingAccuracyPawn>0.35</ShootingAccuracyPawn>
-          </statFactors>
-		
-          <capMods>
-            <li>
-              <capacity>Moving</capacity>
-              <offset>-0.20</offset>
-            </li>
-          </capMods>
-      </li>
-    </stages>
-
-  </HediffDef>
- 
-	
+	</DamageDef> 
 
 </Defs>
+
 
 
