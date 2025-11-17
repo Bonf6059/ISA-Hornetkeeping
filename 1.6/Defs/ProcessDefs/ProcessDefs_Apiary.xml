@@ -49,6 +49,18 @@
 				<li>Fish</li>
 			</categories>
 		</ingredientFilter>
-	</ProcessorFramework.ProcessDef>
+  </ProcessorFramework.ProcessDef>
 
+  <ProcessorFramework.ProcessDef ParentName="ISA_ApiaryBase">
+		<defName>ISA_MeatIntoVFEM2Honey</defName>
+		<thingDef>VFEM2_Honey</thingDef>
+	  	<processDays>2</processDays><!-- in days, a day is 60,000 ticks -->
+		<ingredientFilter>
+			<categories>
+				<li>MeatRaw</li>
+				<li>Fish</li>
+			</categories>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+	
 </Defs>
