@@ -85,17 +85,8 @@
 			<li>Brewing</li>
 		</researchPrerequisites>
 	</ThingDef>
-
-	<ProcessorFramework.ProcessDef ParentName="ISA_Processor_AlcoholBase">
-		<defName>ISA_HornetHoneyIntoMead</defName>
-		<thingDef>ISA_HornetMead</thingDef>
-		<ingredientFilter>
-			<thingDefs>
-				<li>ISA_HornetHoney</li>
-			</thingDefs>
-		</ingredientFilter>
-	</ProcessorFramework.ProcessDef>
 	
 
 </Defs>
+
 
