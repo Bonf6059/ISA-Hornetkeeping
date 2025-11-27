@@ -25,12 +25,22 @@
       </li>
 
       <li Class="StockGenerator_SingleDef">
+        <thingDef>VFEM2_Mead</thingDef>
+        <countRange>15~75</countRange>
+      </li>
+
+      <li Class="StockGenerator_SingleDef">
         <thingDef>ISA_DeathstingerApiary</thingDef>
         <countRange>-1~3</countRange>
       </li>
 
       <li Class="StockGenerator_SingleDef">
         <thingDef>ISA_HornetHoney</thingDef>
+        <countRange>34~150</countRange>
+      </li>
+
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>VFEM2_Honey</thingDef>
         <countRange>34~150</countRange>
       </li>
 
@@ -44,6 +54,11 @@
         <countRange>-1~2</countRange>
       </li>
 
+	  <li Class="StockGenerator_Category">
+        <categoryDef>MeatRaw</categoryDef>
+		<countRange>35~500</countRange>
+      </li>
+		
       <li Class="StockGenerator_Animals">
         <maxWildness>1</maxWildness>
         <tradeTagsSell>
@@ -54,11 +69,6 @@
         <createMatingPair>
           <li>AnimalInsect</li>
         </createMatingPair>
-      </li>
-
-	  <li Class="StockGenerator_Category">
-        <categoryDef>MeatRaw</categoryDef>
-		<countRange>35~500</countRange>
       </li>
 
       <!-- Buying -->
