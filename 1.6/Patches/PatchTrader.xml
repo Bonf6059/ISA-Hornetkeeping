@@ -27,3 +27,12 @@
   </Operation>
 </Patch>
 
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/FactionDef[defName="Base_Neolithic_Standard"]/caravanTraderKinds</xpath>
+    <value>
+    <li>ISA_Caravan_Apiculture</li>
+    </value>
+  </Operation>
+</Patch>
+
+
