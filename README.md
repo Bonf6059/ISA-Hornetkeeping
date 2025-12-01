@@ -8,5 +8,9 @@ This mod adds honey and mead and stuff to the mod [ISA] Medieval and adds some a
 
 # Old updates
 
+01/12/2025
+
+- Added genes for addiction and resistance to Hornet Honey
+
 27/11/2025
 - Updated Apicultural trader to add VFEM2 Honey and Mead
