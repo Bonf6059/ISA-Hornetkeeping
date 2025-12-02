@@ -8,13 +8,14 @@
 		<baseCost>500</baseCost>
 		<tab>ISA_MedievalResearchTab</tab>
 		<techLevel>Medieval</techLevel>
-        <researchViewX>4.00</researchViewX>
-        <researchViewY>2.40</researchViewY>
+        <researchViewX>0.5</researchViewX>
+        <researchViewY>0.5</researchViewY>
 		<prerequisites>
 			<li>ISA_Agriculture</li>
 		</prerequisites>
 	</ResearchProjectDef>
 	
 </Defs>
+
 
 
