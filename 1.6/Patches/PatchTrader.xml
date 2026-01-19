@@ -12,14 +12,14 @@
     </value>
   </Operation>
 
-  <Operation Class="PatchOperationAdd">
+  <Operation Class="PatchOperationAdd" MayRequire="OskarPotocki.VFE.Medieval2">
     <xpath>/Defs/FactionDef[@Name="VFEM2_VikingBase"]/caravanTraderKinds</xpath>
     <value>
     <li>ISA_Caravan_Apiculture</li>
     </value>
   </Operation>
 
-  <Operation Class="PatchOperationAdd">
+  <Operation Class="PatchOperationAdd" MayRequire="OskarPotocki.VFE.Medieval2">
     <xpath>/Defs/FactionDef[@Name="VFEM2_MedievalFactionBase"]/caravanTraderKinds</xpath>
     <value>
     <li>ISA_Caravan_Apiculture</li>
@@ -27,6 +27,7 @@
   </Operation>
 
 </Patch>
+
 
 
 
