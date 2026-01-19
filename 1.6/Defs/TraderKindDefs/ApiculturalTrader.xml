@@ -24,7 +24,7 @@
         <countRange>15~75</countRange>
       </li>
 
-      <li Class="StockGenerator_SingleDef">
+      <li Class="StockGenerator_SingleDef" MayRequire="OskarPotocki.VFE.Medieval2">
         <thingDef>VFEM2_Mead</thingDef>
         <countRange>15~75</countRange>
       </li>
@@ -39,7 +39,7 @@
         <countRange>34~150</countRange>
       </li>
 
-	  <li Class="StockGenerator_SingleDef">
+	  <li Class="StockGenerator_SingleDef" MayRequire="OskarPotocki.VFE.Medieval2">
         <thingDef>VFEM2_Honey</thingDef>
         <countRange>34~150</countRange>
       </li>
