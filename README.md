@@ -4,7 +4,7 @@ This mod adds honey and mead and stuff to the mod [ISA] Medieval and adds some a
 
 # Ideas for possible next updates
 
--
+-Cold resistant hives? Or bees? IDK, just make a different structure where the ProcessDef is more cold resistant than the std one but less heat resistant as if it is coated in wool or smt 
 
 # Old updates
 
