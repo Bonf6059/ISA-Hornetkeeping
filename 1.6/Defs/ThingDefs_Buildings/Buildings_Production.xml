@@ -83,6 +83,7 @@
             </li>
 	  
 		</comps>
+		<minifiedDef>MinifiedThing</minifiedDef>
 	</ThingDef>
 	
   <ThingDef ParentName="MoteBase">
@@ -214,6 +215,7 @@
 
   </HediffDef>
 </Defs>
+
 
 
 
