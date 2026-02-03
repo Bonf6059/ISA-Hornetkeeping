@@ -33,6 +33,7 @@
 		<statBases>
 			<MaxHitPoints>130</MaxHitPoints>
 			<Flammability>1.0</Flammability>
+			<Mass>5</Mass>
 		</statBases>
 		
 		<pathCost>42</pathCost>
@@ -215,6 +216,7 @@
 
   </HediffDef>
 </Defs>
+
 
 
 
