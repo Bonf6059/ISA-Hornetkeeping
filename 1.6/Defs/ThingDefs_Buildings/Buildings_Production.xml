@@ -21,7 +21,9 @@
 		<researchPrerequisites>
 			<li>ISA_Hornetkeeping</li>
 		</researchPrerequisites>
-		
+		<thingCategories>
+      		<li>BuildingsProduction</li>
+  		</thingCategories>
         <costStuffCount>60</costStuffCount>
         <stuffCategories>
           <li>Woody</li>
@@ -216,6 +218,7 @@
 
   </HediffDef>
 </Defs>
+
 
 
 
