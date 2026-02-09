@@ -8,8 +8,10 @@ This mod adds honey and mead and stuff to the mod [ISA] Medieval and adds some a
 
 # Old updates
 
-01/12/2025
+09/02/2026
+- Removed ISA_DeathstingerApiary from the trader's inventory, it caused the trader to be attacked by the swarm
 
+01/12/2025
 - Added genes for addiction and resistance to Hornet Honey
 
 27/11/2025
