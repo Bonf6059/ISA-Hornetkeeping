@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+ 
+	<!-- Apiary -->
+	<ProcessorFramework.ProcessDef ParentName="ISA_ApiaryBase" Name="ISA_InsulatedApiaryBase" Abstract="True">
+		<temperatureSafe>-25.0~15.0</temperatureSafe>
+		<temperatureIdeal>-15.0~10.0</temperatureIdeal>
+	</ProcessorFramework.ProcessDef>
+
+  <ProcessorFramework.ProcessDef ParentName="ISA_InsulatedApiaryBase">
+		<defName>ISA_InsulatedMeatIntoHoney</defName>
+		<thingDef>ISA_HornetHoney</thingDef>
+	  	<processDays>2</processDays><!-- in days, a day is 60,000 ticks -->
+		<ingredientFilter>
+			<categories>
+				<li>MeatRaw</li>
+				<li>Fish</li>
+			</categories>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+
+  <ProcessorFramework.ProcessDef ParentName="ISA_InsulatedApiaryBase">
+		<defName>ISA_InsulatedMeatIntoLarvae</defName>
+		<thingDef>ISA_DeathstingerLarvae</thingDef>
+	  	<processDays>5</processDays><!-- in days, a day is 60,000 ticks -->
+		<ingredientFilter>
+			<categories>
+				<li>MeatRaw</li>
+				<li>Fish</li>
+			</categories>
+		</ingredientFilter>
+  </ProcessorFramework.ProcessDef>
+
+  <ProcessorFramework.ProcessDef ParentName="ISA_InsulatedApiaryBase" MayRequire="OskarPotocki.VFE.Medieval2">
+		<defName>ISA_InsulatedMeatIntoVFEM2Honey</defName>
+		<thingDef>VFEM2_Honey</thingDef>
+	  	<processDays>2</processDays><!-- in days, a day is 60,000 ticks -->
+		<ingredientFilter>
+			<categories>
+				<li>MeatRaw</li>
+				<li>Fish</li>
+			</categories>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+	
+</Defs>
