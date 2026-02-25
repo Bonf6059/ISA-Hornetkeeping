@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="BuildingBase" Name="ISA_DeathstingerApiaryBase">
 		<defName>ISA_DeathstingerApiary</defName>
 		<label>deathstinger apiary</label>
 		<description>An apiary occupied by deathstingers. It is less dangerous than a natural hive, whilst also being much slower at producing honey. Deathstinger drones will protect it to the best of their ability, swarming and stinging anything that stays in their territory for too long.\n\nDeathstingers can reproduce and quickly breed without a queen, making them a common and dangerous pest.</description>
@@ -24,11 +24,12 @@
 		<thingCategories>
       		<li>BuildingsProduction</li>
   		</thingCategories>
-        <costStuffCount>60</costStuffCount>
+        <!--<costStuffCount>60</costStuffCount>
         <stuffCategories>
           <li>Woody</li>
-        </stuffCategories>
+        </stuffCategories> -->
 		<costList>
+			<WoodLog>60</WoodLog>
 			<ISA_DeathstingerLarvae>5</ISA_DeathstingerLarvae>
 		</costList>
 		
@@ -77,7 +78,7 @@
 			</li>
 			<li Class="CompProperties_SpawnerFilth">
 				<filthDef>Filth_Slime</filthDef>
-				<spawnMtbHours>4</spawnMtbHours>
+				<spawnMtbHours>8</spawnMtbHours>
 				<spawnRadius>5</spawnRadius>
 			</li>
             <li Class="CompProperties_MoteEmitter">
@@ -89,146 +90,60 @@
 		<minifiedDef>MinifiedThing</minifiedDef>
 	</ThingDef>
 	
-  <ThingDef ParentName="MoteBase">
-    <defName>ISA_DeathstingerSwarm</defName>
-    <graphicData>
-      <texPath>Things/Mote/StingerSwarm</texPath>
-	  <graphicClass>Graphic_MoteRandom</graphicClass>
-      <drawSize>1.7</drawSize>	  
-    </graphicData>
-    <thingClass>MoteThrownAttached</thingClass>
-    <altitudeLayer>MoteOverhead</altitudeLayer>
-    <mote>
-      <fadeInTime>0.2</fadeInTime>
-      <solidTime>0.5</solidTime>
-      <fadeOutTime>0.6</fadeOutTime>
-      <attachedDrawOffset>(0.2, 0, 0.2)</attachedDrawOffset>
-    </mote>
-  </ThingDef>
-  
-    <EffecterDef>
-    <defName>ISA_DeathstingerSwarmed</defName>
-    <offsetMode>Free</offsetMode>
-    <children>
-
-      <li>
-        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
-        <moteDef>ISA_DeathstingerSwarm</moteDef>
-        <burstCount>1</burstCount>
-        <ticksBetweenMotes>5000</ticksBetweenMotes>
-        <positionRadius>0</positionRadius>
-        <scale>1</scale>
-        <positionOffset>(0, 0, 0.15)</positionOffset>
-        <rotation>-50~50</rotation>
-        <rotationRate>0</rotationRate>
-        <absoluteAngle>True</absoluteAngle>
-        <fleckUsesAngleForVelocity>false</fleckUsesAngleForVelocity>
-        <speed>0.18~0.18</speed>
-      </li>
-
-    </children>
-  </EffecterDef>  
-  
-  <HediffDef>
-    <defName>ISA_Swarmed</defName>
-    <label>swarm</label>
-    <hediffClass>HediffWithComps</hediffClass>
-    <description>Swarmed by deathstingers. They will slow people down, and occassionally sting.</description>
-	<defaultLabelColor>(118,112,110)</defaultLabelColor>
-    <everCurableByItem>false</everCurableByItem>
-    <scenarioCanAdd>false</scenarioCanAdd>
-	<initialSeverity>0.9</initialSeverity>
-    <maxSeverity>1</maxSeverity>
-    <isBad>false</isBad>
-	
-    <comps>
-	
-        <li Class="HediffCompProperties_Disappears">
-            <disappearsAfterTicks>3000</disappearsAfterTicks>
-	        <showRemainingTime>False</showRemainingTime>
-       </li>
-	
-	  <li Class="HediffCompProperties_Effecter">
-        <stateEffecter>ISA_DeathstingerSwarmed</stateEffecter>
-        <severityIndices>0~1</severityIndices>
-      </li>
-    </comps>
-	
-    <stages>
-	  
-      <li>
-        <minSeverity>0.8</minSeverity>
-		
-          <hediffGivers>
-             <li Class="HediffGiver_Random">
-             <mtbDays>0.5</mtbDays>
-             <hediff>ISA_DeathStinged</hediff>
-             </li>
-    	  </hediffGivers>
-		  
-		
-          <capMods>
-            <li>
-              <capacity>Moving</capacity>
-              <offset>-0.20</offset>
+	<ThingDef ParentName="ISA_DeathstingerApiaryBase">
+		<defName>ISA_InsulatedDeathstingerApiary</defName>
+		<label>insulated deathstinger apiary</label>
+		<description>An insulated apiary occupied by deathstingers. It is less dangerous than a natural hive, whilst also being much slower at producing honey. Deathstinger drones will protect it to the best of their ability, swarming and stinging anything that stays in their territory for too long.\n\nDeathstingers can reproduce and quickly breed without a queen, making them a common and dangerous pest. This apiary has been insulated with a warm material.</description>
+		<costStuffCount>20</costStuffCount>
+        <stuffCategories>
+          <li>Fabric</li>
+        </stuffCategories>
+		<costList>
+			<WoodLog>60</WoodLog>
+			<ISA_DeathstingerLarvae>5</ISA_DeathstingerLarvae>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_SelfhealHitpoints">
+				<ticksPerHeal>6000</ticksPerHeal><!-- 60k ticks = 1 day, 10 hp per day -->
+			</li>
+			<li Class="CompProperties_AmbientSound">
+				<sound>ISA_Apiary_Ambience</sound>
+			</li>
+			<li Class="ProcessorFramework.CompProperties_Processor">
+				<capacity>20</capacity>
+				<independentProcesses>false</independentProcesses>
+				<parallelProcesses>false</parallelProcesses>
+				<dropIngredients>false</dropIngredients>
+				<showProductIcon>false</showProductIcon>
+				<barOffset>(0.0, 0.25)</barOffset>
+				<barScale>(1.0, 1.0)</barScale>
+				<colorCoded>false</colorCoded>
+				<processes>
+					<li>ISA_InsulatedMeatIntoHoney</li>
+					<li>ISA_InsulatedMeatIntoLarvae</li>
+					<li MayRequire="OskarPotocki.VFE.Medieval2">ISA_InsulatedMeatIntoVFEM2Honey</li>
+				</processes>
+			</li>	
+			<li Class="CompProperties_HeatPusher">
+				<heatPerSecond>6</heatPerSecond>
+				<heatPushMaxTemperature>10</heatPushMaxTemperature>
+			</li>
+			<li Class="CompProperties_CauseHediff_AoE">
+				<hediff>ISA_Swarmed</hediff>
+				<range>2</range>
+			</li>
+			<li Class="CompProperties_SpawnerFilth">
+				<filthDef>Filth_Slime</filthDef>
+				<spawnMtbHours>8</spawnMtbHours>
+				<spawnRadius>5</spawnRadius>
+			</li>
+            <li Class="CompProperties_MoteEmitter">
+               <mote>ISA_DeathstingerSwarm</mote>
+               <emissionInterval>80</emissionInterval>
             </li>
-          </capMods>
-      </li>
-    </stages>
-
-  </HediffDef>
-  
-    <HediffDef>
-    <defName>ISA_DeathStinged</defName>
-    <label>black rash</label>
-    <hediffClass>HediffWithComps</hediffClass>
-    <description>A painful dark rash caused by the poison of a deathstinger drone. Will disappear after one to two days.</description>
-	<defaultLabelColor>(118,112,110)</defaultLabelColor>
-    <everCurableByItem>false</everCurableByItem>
-    <scenarioCanAdd>false</scenarioCanAdd>
-	<isInfection>true</isInfection>
-	<minSeverity>0.1</minSeverity>
-    <maxSeverity>1</maxSeverity>
-    <isBad>false</isBad>
-	
-	
-    <comps>
-	
-        <li Class="HediffCompProperties_Disappears">
-            <disappearsAfterTicks>60000~120000</disappearsAfterTicks>
-	        <showRemainingTime>False</showRemainingTime>
-       </li>
-	
-    </comps>
-	
-    <stages>
 	  
-      <li>
-        <minSeverity>0.8</minSeverity>
-		<painOffset>0.2</painOffset>
-		
-          <capMods>
-            <li>
-              <capacity>Moving</capacity>
-              <offset>-0.10</offset>
-            </li>
-          </capMods>
-      </li>
-    </stages>
-
-  </HediffDef>
+		</comps>
+	</ThingDef>
+	
 </Defs>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
