@@ -8,6 +8,9 @@ This mod adds honey and mead and stuff to the mod [ISA] Medieval and adds some a
 
 # Old updates
 
+25/02/2026
+- Added insulated Deathstinger Apiary, it looks and works the same as the std one but is more cold resistant and more vulnerable to heat 
+
 09/02/2026
 - Removed ISA_DeathstingerApiary from the trader's inventory, it caused the trader to be attacked by the swarm
 
