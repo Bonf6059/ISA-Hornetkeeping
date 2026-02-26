@@ -24,12 +24,11 @@
 		<thingCategories>
       		<li>BuildingsProduction</li>
   		</thingCategories>
-        <!--<costStuffCount>60</costStuffCount>
+        <costStuffCount>60</costStuffCount>
         <stuffCategories>
           <li>Woody</li>
-        </stuffCategories> -->
+        </stuffCategories>
 		<costList>
-			<WoodLog>60</WoodLog>
 			<ISA_DeathstingerLarvae>5</ISA_DeathstingerLarvae>
 		</costList>
 		
@@ -94,12 +93,12 @@
 		<defName>ISA_InsulatedDeathstingerApiary</defName>
 		<label>insulated deathstinger apiary</label>
 		<description>An insulated apiary occupied by deathstingers. It is less dangerous than a natural hive, whilst also being much slower at producing honey. Deathstinger drones will protect it to the best of their ability, swarming and stinging anything that stays in their territory for too long.\n\nDeathstingers can reproduce and quickly breed without a queen, making them a common and dangerous pest. This apiary has been insulated with a warm material.</description>
-		<costStuffCount>20</costStuffCount>
+		<costStuffCount>60</costStuffCount>
         <stuffCategories>
-          <li>Fabric</li>
+          <li>Woody</li>
         </stuffCategories>
 		<costList>
-			<WoodLog>60</WoodLog>
+			<Cloth>30</Cloth>
 			<ISA_DeathstingerLarvae>5</ISA_DeathstingerLarvae>
 		</costList>
 		<comps>
@@ -147,3 +146,4 @@
 	</ThingDef>
 	
 </Defs>
+
