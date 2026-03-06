@@ -2,6 +2,6 @@
 	<v1.6>
 		<li>/</li>
 		<li>1.6</li>
-		<li IfModActive="OskarPotocki.VFE.Medieval2">Mods/VFEM2</li>
+		<li IfModActive="OskarPotocki.VFE.Medieval2">1.6/Mods/VFEM2</li>
 	</v1.6>
 </loadFolders>
