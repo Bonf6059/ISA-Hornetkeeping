@@ -8,8 +8,8 @@
 		<baseCost>500</baseCost>
 		<tab>ISA_MedievalResearchTab</tab>
 		<techLevel>Medieval</techLevel>
-        <researchViewX>0.5</researchViewX>
-        <researchViewY>0.5</researchViewY>
+        <researchViewX>1</researchViewX>
+        <researchViewY>1</researchViewY>
 		<prerequisites>
 			<li>ISA_Agriculture</li>
 		</prerequisites>
