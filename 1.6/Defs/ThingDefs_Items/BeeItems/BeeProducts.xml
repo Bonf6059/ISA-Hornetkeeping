@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!-- Honeycomb -->
+  
+  <ThingDef ParentName="OrganicProductBase" Name="ISA_HoneycombBase">
+    <defName>ISA_BeeHoneycomb</defName>
+    <label>honeycomb</label>
+    <description>Honeycomb from a beehive or apiary. While edible, it is better when processed separately into honey and wax. This can be done at cooking sites. While longlasting, it does not last as long as pure honey.</description>
+    <graphicData>
+      <texPath>Things/Bee/Honeycomb</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MarketValue>6.0</MarketValue> <!-- Can be used like meat in recipes -->
+      <Mass>0.045</Mass>
+      <MaxHitPoints>60</MaxHitPoints>
+      <Flammability>0.2</Flammability>
+      <Nutrition>0.1</Nutrition>
+      <FoodPoisonChanceFixedHuman>0.0</FoodPoisonChanceFixedHuman>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>30</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+      <foodType>AnimalProduct</foodType>
+      <babiesCanIngest>false</babiesCanIngest>
+    </ingestible>
+    <thingCategories>
+      <li>AnimalProductRaw</li>
+    </thingCategories>
+    <allowedArchonexusCount>150</allowedArchonexusCount>
+  </ThingDef>
+
+  <!-- Honey -->
+	
+	<ThingDef ParentName="OrganicProductBase">
+    <defName>ISA_BeeHoney</defName>
+    <label>honey</label>
+    <description>Honey is produced by a small variety of bees. It is smooth, gooey, sweet, and fulfills the recreation need of those that consume it. Virtually any creature can eat it due to its unique properties and it lasts a long time before going bad. It is unwise to give it to babies, however.</description>
+    <possessionCount>10</possessionCount>
+    <graphicData>
+      <texPath>Things/Bee/Honey</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MarketValue>2.5</MarketValue>
+      <Mass>0.025</Mass>
+      <Nutrition>0.05</Nutrition>
+      <FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>150</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <ingestible>
+      <foodType>AnimalProduct</foodType>
+      <preferability>MealFine</preferability>
+      <joy>0.070</joy>
+      <joyKind>Gluttonous</joyKind>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+      <lowPriorityCaravanFood>true</lowPriorityCaravanFood>
+      <babiesCanIngest>false</babiesCanIngest>
+    </ingestible>
+    <thingCategories>
+      <li>AnimalProductRaw</li>
+    </thingCategories>
+    <stackLimit>250</stackLimit>
+    <allowedArchonexusCount>150</allowedArchonexusCount>
+  </ThingDef>
+
+<!-- Queen Bee -->
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>ISA_QueenBee</defName>
+    <label>queen bee</label>
+    <description>A queen bee encased safely in a jar. She can be used to build a new apiary.</description>
+    <graphicData>
+      <texPath>Things/Bee/Misc/QueenBee</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <stackLimit>10</stackLimit>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MarketValue>10</MarketValue>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>1.0</Mass>
+      <Flammability>0.2</Flammability>
+    </statBases>
+    <thingCategories>
+      <li>ItemsMisc</li>
+    </thingCategories>
+    <tradeability>Sellable</tradeability>
+    <techLevel>Neolithic</techLevel>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingSetMakerTags>
+      <li>RewardStandardCore</li>
+    </thingSetMakerTags>
+  </ThingDef>
+  
+</Defs>
