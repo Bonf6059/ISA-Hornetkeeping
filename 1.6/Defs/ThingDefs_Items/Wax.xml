@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Wax -->
+
+    	<ThingDef ParentName="ResourceBase">
+		<defName>ISA_Waxblock</defName>
+		<label>wax block</label>
+		<description>A block of wax made from processed honeycomb. It can be used to make art, such as wax sculptures, as well as candles.</description>
+		<graphicData>
+			<texPath>Things/MiscItems/Beewax</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Standard_Pickup</soundInteract>
+		<soundDrop>Standard_Pickup</soundDrop>
+		<statBases>
+			<MarketValue>1</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>0.005</Mass> 
+			<Flammability>1</Flammability>
+			<ConstructionSpeedFactor>0.15</ConstructionSpeedFactor>
+			<StuffPower_Insulation_Cold>1</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
+			<SharpDamageMultiplier>0.1</SharpDamageMultiplier>
+			<BluntDamageMultiplier>0.25</BluntDamageMultiplier>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<stackLimit>500</stackLimit>
+		<smallVolume>true</smallVolume>
+		<stuffProps>
+			<stuffAdjective>waxy</stuffAdjective>
+			<categories>
+				<li>Stony</li>
+			</categories>
+			<appearance>Bricks</appearance>
+			<commonality>0.0</commonality>
+			<soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
+			<soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+			<statFactors>
+				<MaxHitPoints>0.20</MaxHitPoints>
+				<Beauty>3</Beauty>
+				<Flammability>1</Flammability>
+				<WorkToMake>0.85</WorkToMake>
+				<WorkToBuild>1</WorkToBuild>
+				<DoorOpenSpeed>1</DoorOpenSpeed>
+				<BedRestEffectiveness>0.8</BedRestEffectiveness>
+				<Comfort>0.8</Comfort>
+				<MeleeWeapon_CooldownMultiplier>0.75</MeleeWeapon_CooldownMultiplier>
+			</statFactors>
+		<isAirtight>true</isAirtight>
+		<color>(222,136,69)</color>
+		</stuffProps>
+		<tradeTags>
+		  <li>ExoticMisc</li>
+		</tradeTags>
+		<smeltable>false</smeltable>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+	</ThingDef>
+  
+</Defs>
