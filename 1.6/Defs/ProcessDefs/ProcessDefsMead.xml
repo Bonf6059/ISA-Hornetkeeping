@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
- 
+
+<!-- Mead Barrel -->
+	
+	<ProcessorFramework.ProcessDef ParentName="ISA_Processor_AlcoholBase">
+		<defName>ISA_BeeHoneyIntoMead</defName>
+		<thingDef>ISA_BeeMead</thingDef>
+		<ingredientFilter>
+			<thingDefs>
+				<li>ISA_BeeHoney</li>
+			</thingDefs>
+		</ingredientFilter>
+		<processDays>2</processDays><!-- in days, a day is 60,000 ticks -->
+		<capacityFactor>4.0</capacityFactor><!-- do not use too many decimals e.g 0.333 is fine for 1/3 -->
+	</ProcessorFramework.ProcessDef>
+
 	<ProcessorFramework.ProcessDef ParentName="ISA_Processor_AlcoholBase">
 		<defName>ISA_HornetHoneyIntoMead</defName>
 		<thingDef>ISA_HornetMead</thingDef>
@@ -9,6 +23,8 @@
 				<li>ISA_HornetHoney</li>
 			</thingDefs>
 		</ingredientFilter>
+		<processDays>2</processDays><!-- in days, a day is 60,000 ticks -->
+		<capacityFactor>4.0</capacityFactor><!-- do not use too many decimals e.g 0.333 is fine for 1/3 -->
 	</ProcessorFramework.ProcessDef>
 
 </Defs>
