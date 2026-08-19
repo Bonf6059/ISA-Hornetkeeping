@@ -10,7 +10,7 @@
 			<HediffDef>ISA_HornetHoneyAddiction</HediffDef>
 		</descriptionHyperlinks>
 		<graphicData>
-			<texPath>Things/HornetHoney</texPath>
+			<texPath>Things/Hornet/HornetHoney</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<rotatable>false</rotatable>
