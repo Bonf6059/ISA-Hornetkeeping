@@ -64,6 +64,7 @@
     </building>
     <researchPrerequisites>
       <li>Brewing</li>
+      <li>ISA_Beekeeping</li>
     </researchPrerequisites>
   </ThingDef>
   
