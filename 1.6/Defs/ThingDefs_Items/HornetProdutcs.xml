@@ -1,6 +1,60 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+<!-- Hornet Honeycomb -->
+  
+<ThingDef ParentName="ISA_HoneycombBase">
+    <defName>ISA_HornetHoneycomb</defName>
+    <label>hornet honeycomb</label>
+    <description>Honeycomb from a hornethive or hornet apiary. While edible, it is better when processed separately into honey and wax. This can be done at cooking sites. While longlasting, it does not last as long as pure honey.</description>
+    <graphicData>
+      <texPath>Things/Hornet/HornetHoneycomb</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MarketValue>8.0</MarketValue> <!-- Can be used like meat in recipes -->
+      <Mass>0.045</Mass>
+      <MaxHitPoints>60</MaxHitPoints>
+      <Flammability>0.2</Flammability>
+      <Nutrition>0.1</Nutrition>
+      <FoodPoisonChanceFixedHuman>0.2</FoodPoisonChanceFixedHuman>
+    </statBases>
+</ThingDef>
+
+<!-- DeathstingerLarvae -->
+	
+ <ThingDef ParentName="ResourceBase">
+    <defName>ISA_DeathstingerLarvae</defName>
+    <label>deathstinger larvae</label>
+    <description>The bottled larvae extracted from a deathstinger hive. Contrary to common beliefs, deathstinger hives can operate and thrive without a queen. Can be used to make a deathstinger apiary.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Hornet/Misc/DeathstingerLarvae</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>240</MarketValue>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>0.9</Mass>
+      <Flammability>1</Flammability>
+      <DeteriorationRate>2</DeteriorationRate>
+    </statBases>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <stackLimit>5</stackLimit>
+    <thingCategories>
+      <li>ItemsMisc</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingSetMakerTags>
+      <li>AnimalPart</li>
+    </thingSetMakerTags>
+  </ThingDef>
+	
+<!-- Hornet Honey-->
+	  
 	<ThingDef ParentName="DrugBase">
 		<defName>ISA_HornetHoney</defName>
 		<label>hornet honey</label>
