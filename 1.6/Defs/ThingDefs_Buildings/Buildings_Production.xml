@@ -2,7 +2,7 @@
 <Defs>
 
   <ThingDef ParentName="BuildingBase">
-    <defName>ISA_MedievalApiary</defName>
+    <defName>ISA_BeeApiary</defName>
     <label>simple apiary</label>
     <description>A simple apiary for bees. It produces harvestable honeycomb over time when there are flowers, but only during warmer temperatures.</description>
     <thingClass>Building</thingClass>
