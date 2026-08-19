@@ -43,6 +43,9 @@
 			<ISA_Waxblock>12</ISA_Waxblock>
 			<ISA_BeeHoney>8</ISA_BeeHoney>
 		</products>
+    	<researchPrerequisites>
+    	  <li>ISA_Beekeeping</li>
+    	</researchPrerequisites>
 	</RecipeDef>
 
 <!-- Bee Honeycomb bulk -->
@@ -87,6 +90,9 @@
 			<ISA_Waxblock>72</ISA_Waxblock>
 			<ISA_BeeHoney>36</ISA_BeeHoney>
 		</products>
+    	<researchPrerequisites>
+    	  <li>ISA_Beekeeping</li>
+    	</researchPrerequisites>
 	</RecipeDef>
 
 <!-- Hornet Honeycomb -->
@@ -131,6 +137,9 @@
 			<ISA_Waxblock>12</ISA_Waxblock>
 			<ISA_HornetHoney>8</ISA_HornetHoney>
 		</products>
+    	<researchPrerequisites>
+    	  <li>ISA_Hornetkeeping</li>
+    	</researchPrerequisites>
 	</RecipeDef>
 
 <!-- Hornet Honeycomb bulk -->
@@ -175,6 +184,9 @@
 			<ISA_Waxblock>72</ISA_Waxblock>
 			<ISA_HornetHoney>36</ISA_HornetHoney>
 		</products>
+    	<researchPrerequisites>
+    	  <li>ISA_Hornetkeeping</li>
+    	</researchPrerequisites>
 	</RecipeDef>
   
 
