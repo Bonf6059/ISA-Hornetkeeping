@@ -1,12 +1,19 @@
 # ISA-Hornetkeeping
 
-This mod adds honey and mead and stuff to the mod [ISA] Medieval and adds some additional way to get VFE Medieval 2's honey.
+This mod adds honey and mead and stuff to the mod [ISA] Medieval.
 
 # Ideas for possible next updates
 
-- Reorganize files
+- 
 
 # Old updates
+
+19/08/2026
+- Replaced every hornet-/deathstinger- texture
+- Added bees and everything related to it
+- Added honeycombs
+- Updated trader
+- Reorganized files
 
 25/02/2026
 - Added insulated Deathstinger Apiary, it looks and works the same as the std one but is more cold resistant and more vulnerable to heat
