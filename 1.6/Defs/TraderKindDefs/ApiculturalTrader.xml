@@ -24,8 +24,8 @@
         <countRange>25~75</countRange>
       </li>
 
-      <li Class="StockGenerator_SingleDef" MayRequire="OskarPotocki.VFE.Medieval2">
-        <thingDef>VFEM2_Mead</thingDef>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>ISA_BeeMead</thingDef>
         <countRange>25~75</countRange>
       </li>
 
@@ -39,23 +39,38 @@
         <countRange>64~150</countRange>
       </li>
 
-	  <li Class="StockGenerator_SingleDef" MayRequire="OskarPotocki.VFE.Medieval2">
-        <thingDef>VFEM2_Honey</thingDef>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>ISA_BeeHoney</thingDef>
         <countRange>64~150</countRange>
       </li>
 
       <li Class="StockGenerator_SingleDef">
         <thingDef>ISA_DeathstingerLarvae</thingDef>
-        <countRange>3~7</countRange>
+        <countRange>2~7</countRange>
       </li>
 
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>ISA_QueenBee</thingDef>
+        <countRange>1~4</countRange>
+      </li>
+		
       <li Class="StockGenerator_SingleDef">
         <thingDef>ISA_Apparel_DeathstingerJar</thingDef>
         <countRange>-1~2</countRange>
       </li>
 
 	  <li Class="StockGenerator_Category">
-        <categoryDef>MeatRaw</categoryDef>
+        <categoryDef>ISA_BeeHoneycomb</categoryDef>
+		<countRange>50~150</countRange>
+      </li>
+
+	  <li Class="StockGenerator_Category">
+        <categoryDef>ISA_HornetHoneycomb</categoryDef>
+		<countRange>50~150</countRange>
+      </li>
+		
+	  <li Class="StockGenerator_Category">
+        <categoryDef>ISA_Waxblock</categoryDef>
 		<countRange>150~500</countRange>
       </li>
 		
