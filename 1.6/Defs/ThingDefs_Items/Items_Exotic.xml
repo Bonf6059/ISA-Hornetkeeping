@@ -8,7 +8,7 @@
     <possessionCount>1</possessionCount>
 	
     <graphicData>
-      <texPath>Things/DeathstingerLarvae</texPath>
+      <texPath>Things/Hornet/Misc/DeathstingerLarvae</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
 	
