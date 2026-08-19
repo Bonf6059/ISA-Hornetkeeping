@@ -103,6 +103,9 @@
       <li>BuildingsFurniture</li>
     </thingCategories>
     <designationHotKey>Misc10</designationHotKey>
+    <researchPrerequisites>
+      <li>ISA_Beekeeping</li>
+    </researchPrerequisites>
   </ThingDef>
   
    <ThingDef ParentName="BuildingBase">
@@ -211,6 +214,9 @@
       <li>BuildingsFurniture</li>
     </thingCategories>
     <designationHotKey>Misc10</designationHotKey>
+    <researchPrerequisites>
+      <li>ISA_Beekeeping</li>
+    </researchPrerequisites>
   </ThingDef>
   
   <ThingDef ParentName="BuildingBase">
@@ -318,6 +324,9 @@
       <li>BuildingsFurniture</li>
     </thingCategories>
     <designationHotKey>Misc10</designationHotKey>
+    <researchPrerequisites>
+      <li>ISA_Beekeeping</li>
+    </researchPrerequisites>
   </ThingDef>
   
   <ThingDef ParentName="BuildingBase">
@@ -425,6 +434,9 @@
       <li>BuildingsFurniture</li>
     </thingCategories>
     <designationHotKey>Misc10</designationHotKey>
+    <researchPrerequisites>
+      <li>ISA_Beekeeping</li>
+    </researchPrerequisites>
   </ThingDef>
 
 </Defs>
