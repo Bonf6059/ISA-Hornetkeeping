@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Bee Honeycomb -->
+  
+	<RecipeDef>
+		<defName>ISA_BeeHoneycombProcessing</defName>
+		<label>make honey and wax from (bees) honeycomb</label>
+		<description>Make delicious honey and useful wax from (bees) honeycomb.</description>
+		<jobString>Processing honeycomb.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<workAmount>600</workAmount>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>Campfire</li>
+			<li>ElectricStove</li>
+			<li>FueledStove</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ISA_BeeHoneycomb</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ISA_BeeHoneycomb</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<thingDefs>
+				<li>ISA_BeeHoneycomb</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<products>
+			<ISA_Waxblock>12</ISA_Waxblock>
+			<ISA_BeeHoney>8</ISA_BeeHoney>
+		</products>
+	</RecipeDef>
+
+<!-- Bee Honeycomb bulk -->
+  
+	<RecipeDef>
+		<defName>ISA_BeeHoneycombBulkProcessing</defName>
+		<label>make honey and wax from (bees) honeycomb x3</label>
+		<description>Make delicious honey and useful wax from (bees) honeycomb in bulk.</description>
+		<jobString>Processing honeycomb.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<workAmount>2200</workAmount>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>Campfire</li>
+			<li>ElectricStove</li>
+			<li>FueledStove</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ISA_BeeHoneycomb</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ISA_BeeHoneycomb</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<thingDefs>
+				<li>ISA_BeeHoneycomb</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<products>
+			<ISA_Waxblock>72</ISA_Waxblock>
+			<ISA_BeeHoney>36</ISA_BeeHoney>
+		</products>
+	</RecipeDef>
+
+<!-- Hornet Honeycomb -->
+  
+	<RecipeDef>
+		<defName>ISA_HornetHoneycombProcessing</defName>
+		<label>make honey and wax from (deathstinger) honeycomb</label>
+		<description>Make delicious honey and useful wax from (deathstinger) honeycomb.</description>
+		<jobString>Processing honeycomb.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<workAmount>600</workAmount>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>Campfire</li>
+			<li>ElectricStove</li>
+			<li>FueledStove</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ISA_HornetHoneycomb</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ISA_HornetHoneycomb</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<thingDefs>
+				<li>ISA_HornetHoneycomb</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<products>
+			<ISA_Waxblock>12</ISA_Waxblock>
+			<ISA_HornetHoney>8</ISA_HornetHoney>
+		</products>
+	</RecipeDef>
+
+<!-- Hornet Honeycomb bulk -->
+  
+	<RecipeDef>
+		<defName>ISA_HornetHoneycombBulkProcessing</defName>
+		<label>make honey and wax from (deathstingers) honeycomb x3</label>
+		<description>Make delicious honey and useful wax from (deathstingers) honeycomb in bulk.</description>
+		<jobString>Processing honeycomb.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<workAmount>2200</workAmount>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>Campfire</li>
+			<li>ElectricStove</li>
+			<li>FueledStove</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ISA_HornetHoneycomb</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ISA_HornetHoneycomb</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<thingDefs>
+				<li>ISA_HornetHoneycomb</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<products>
+			<ISA_Waxblock>72</ISA_Waxblock>
+			<ISA_HornetHoney>36</ISA_HornetHoney>
+		</products>
+	</RecipeDef>
+  
+
+</Defs>
