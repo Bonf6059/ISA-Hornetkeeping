@@ -59,17 +59,17 @@
         <countRange>-1~2</countRange>
       </li>
 
-	  <li Class="StockGenerator_Category">
+	  <li Class="StockGenerator_SingleDef">
         <categoryDef>ISA_BeeHoneycomb</categoryDef>
 		<countRange>50~150</countRange>
       </li>
 
-	  <li Class="StockGenerator_Category">
+	  <li Class="StockGenerator_SingleDef">
         <categoryDef>ISA_HornetHoneycomb</categoryDef>
 		<countRange>50~150</countRange>
       </li>
 		
-	  <li Class="StockGenerator_Category">
+	  <li Class="StockGenerator_SingleDef">
         <categoryDef>ISA_Waxblock</categoryDef>
 		<countRange>150~500</countRange>
       </li>
