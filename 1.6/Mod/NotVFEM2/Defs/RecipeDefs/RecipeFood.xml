@@ -35,7 +35,7 @@
 				<filter>
 					<thingDefs>
 						<li>ISA_HornetHoney</li>
-            <li>ISA_Honey</li>
+            			<li>ISA_BeeHoney</li>
 					</thingDefs>
 				</filter>
 				<count>2</count>
@@ -50,8 +50,8 @@
 			</categories>
 			<thingDefs>
 				<li>ISA_HornetHoney</li>
-        <li>ISA_Honey</li>
-        <li>ISA_Flour</li>
+        		<li>ISA_BeeHoney</li>
+       			<li>ISA_Flour</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
