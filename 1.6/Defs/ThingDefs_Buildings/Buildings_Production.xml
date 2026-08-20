@@ -62,6 +62,7 @@
         <spawnCount>10</spawnCount>
         <spawnIntervalRange>26000~30000</spawnIntervalRange>
         <spawnMaxAdjacent>100</spawnMaxAdjacent>
+        <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
         <spawnForbidden>false</spawnForbidden>
       </li>
 	  <li Class="CompProperties_Forbiddable"/>
@@ -145,19 +146,6 @@
 			<li Class="CompProperties_AmbientSound">
 				<sound>ISA_Apiary_Ambience</sound>
 			</li>
-			<!--<li Class="ProcessorFramework.CompProperties_Processor">
-				<capacity>20</capacity>
-				<independentProcesses>false</independentProcesses>
-				<parallelProcesses>false</parallelProcesses>
-				<dropIngredients>false</dropIngredients>
-				<showProductIcon>false</showProductIcon>
-				<barOffset>(0.0, 0.25)</barOffset>
-				<barScale>(1.0, 1.0)</barScale>
-				<colorCoded>false</colorCoded>
-				<processes>
-					<li>ISA_MeatIntoHornetHoneycomb</li>
-				</processes>
-			</li>-->
 			<li Class="CompProperties_Spawner">
         		<requiresPower>false</requiresPower>
         		<thingToSpawn>ISA_DeathstingerLarvae</thingToSpawn>
@@ -172,6 +160,7 @@
         		<spawnIntervalRange>26000~30000</spawnIntervalRange>
         		<spawnMaxAdjacent>100</spawnMaxAdjacent>
         		<spawnForbidden>false</spawnForbidden>
+				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
       		</li>
 			<li Class="CompProperties_HeatPusher">
 				<heatPerSecond>6</heatPerSecond>
