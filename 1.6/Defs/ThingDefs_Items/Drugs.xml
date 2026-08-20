@@ -193,7 +193,7 @@
     <socialPropernessMatters>true</socialPropernessMatters>
     <tickerType>Rare</tickerType>
     <graphicData>
-			<texPath>Things/MiscItem/PollenBag</texPath>
+			<texPath>Things/MiscItems/PollenBag</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
