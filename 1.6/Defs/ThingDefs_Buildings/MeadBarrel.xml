@@ -46,8 +46,8 @@
 				<barScale>(1.0, 1.0)</barScale>
 				<colorCoded>false</colorCoded>
 				<processes>
-					<li>ISA_Barrel_HornetHoneyIntoMead</li>
-					<li>ISA_Barrel_BeeHoneyIntoMead</li>
+					<li>ISA_HornetHoneyIntoMead</li>
+					<li>ISA_BeeHoneyIntoMead</li>
 				</processes>
 			</li>
     </comps>
