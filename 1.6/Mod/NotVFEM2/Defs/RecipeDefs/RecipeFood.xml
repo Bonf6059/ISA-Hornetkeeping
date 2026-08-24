@@ -12,7 +12,8 @@
 		<allowMixingIngredients>true</allowMixingIngredients>
 		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 		<recipeUsers>
-			<li>ISA_StoneOven</li>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
 		</recipeUsers>
 		<ingredients>
 			<li>
