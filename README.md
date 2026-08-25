@@ -4,7 +4,7 @@ This mod adds honey and mead and stuff to the mod [ISA] Medieval.
 
 # Ideas for possible next updates
 
-- 
+- Add cinnamon rolls
 
 # Old updates
 
