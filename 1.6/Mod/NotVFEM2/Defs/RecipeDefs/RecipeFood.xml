@@ -28,6 +28,7 @@
 				<filter>
 					<thingDefs>
 						<li>ISA_Flour</li>
+						<li MayRequire="det.sbcuisine">SC_Flour</li>
 					</thingDefs>
 				</filter>
 				<count>2</count>
@@ -53,6 +54,7 @@
 				<li>ISA_HornetHoney</li>
         		<li>ISA_BeeHoney</li>
        			<li>ISA_Flour</li>
+				<li MayRequire="det.sbcuisine">SC_Flour</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
