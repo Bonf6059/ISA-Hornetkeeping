@@ -60,7 +60,7 @@
       <li Class="CompProperties_Spawner">
         <thingToSpawn>ISA_BeeHoneycomb</thingToSpawn>
         <spawnCount>10</spawnCount>
-        <spawnIntervalRange>56000~60000</spawnIntervalRange>
+        <spawnIntervalRange>112000~120000</spawnIntervalRange>
         <spawnMaxAdjacent>100</spawnMaxAdjacent>
         <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
         <spawnForbidden>false</spawnForbidden>
