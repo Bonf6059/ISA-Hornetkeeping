@@ -2,9 +2,9 @@
 <Defs>
 
 	<ThingDef ParentName="ApparelNoQualityBase">
-		<defName>ISA_Apparel_DeathstingerJar</defName>
-		<label>deathstinger jars belt</label>
-		<description>A jar filled with very angry deathstingers. Throwing it will cause the jar to break, releasing a black swarm on those hit, slowing them and reducing their combat capabilities. Best to shake before tossing.</description>
+		<defName>ISA_Apparel_HornetJar</defName>
+		<label>hornet jars belt</label>
+		<description>A jar filled with very angry hornets. Throwing it will cause the jar to break, releasing a black swarm on those hit, slowing them and reducing their combat capabilities. Best to shake before tossing.</description>
 		<techLevel>Medieval</techLevel>
 		<researchPrerequisites>
 			<li>ISA_Hornetkeeping</li>
@@ -13,7 +13,7 @@
 		<comps>
 			<li Class="CompProperties_ApparelReloadable">
 				<maxCharges>3</maxCharges>
-				<ammoDef>ISA_DeathstingerLarvae</ammoDef>
+				<ammoDef>ISA_HornetLarvae</ammoDef>
 				<ammoCountToRefill>3</ammoCountToRefill>
 				<baseReloadTicks>120</baseReloadTicks>
 				<soundReload>Interact_MolotovCocktail</soundReload>
@@ -31,7 +31,7 @@
 		
 		<verbs>
 			<li>
-				<label>throw deathstinger jar</label>
+				<label>throw hornet jar</label>
 				<verbClass>Verb_LaunchProjectileStatic</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<onlyManualCast>True</onlyManualCast>
@@ -45,7 +45,7 @@
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
-				<defaultProjectile>ISA_Proj_DeathstingerJar</defaultProjectile>
+				<defaultProjectile>ISA_Proj_HornetJar</defaultProjectile>
 				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
 			</li>
 		</verbs>
@@ -65,11 +65,11 @@
 		</recipeMaker>
 		
 		<costList>
-			<ISA_DeathstingerLarvae>5</ISA_DeathstingerLarvae>
+			<ISA_HornetLarvae>5</ISA_HornetLarvae>
 		</costList>
 		
 		<graphicData>
-			<texPath>Things/Utility/DeathstingerJar/DeathstingerJarBelt</texPath>
+			<texPath>Things/Utility/HornetJar/HornetJarBelt</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<tickerType>Normal</tickerType>
@@ -88,7 +88,7 @@
 		
 		<generateAllowChance>0.15</generateAllowChance>
 		<apparel>
-			<wornGraphicPath>Things/Utility/DeathstingerJar/DeathstingerJarBelt</wornGraphicPath>
+			<wornGraphicPath>Things/Utility/HornetJar/HornetJarBelt</wornGraphicPath>
 			<wornGraphicData>
 				<renderUtilityAsPack>true</renderUtilityAsPack>
 				<north>
@@ -144,10 +144,10 @@
 	
 	
 	<ThingDef ParentName="BaseIncendiaryProjectile">
-		<defName>ISA_Proj_DeathstingerJar</defName>
-		<label>deathstinger jar</label>
+		<defName>ISA_Proj_HornetJar</defName>
+		<label>hornet jar</label>
 		<graphicData>
-			<texPath>Things/Utility/DeathstingerJar/DeathstingerJar</texPath>
+			<texPath>Things/Utility/HornetJar/HornetJar</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>
