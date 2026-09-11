@@ -95,14 +95,14 @@
 	
 <!-- Hornet Apiary -->
 	
-	<ThingDef ParentName="BuildingBase" Name="ISA_DeathstingerApiaryBase">
-		<defName>ISA_DeathstingerApiary</defName>
-		<label>deathstinger apiary</label>
-		<description>An apiary occupied by deathstingers. It is less dangerous than a natural hive, whilst also being much slower at producing honey. Deathstinger drones will protect it to the best of their ability, swarming and stinging anything that stays in their territory for too long.\n\nDeathstingers can reproduce and quickly breed without a queen, making them a common and dangerous pest.</description>
+	<ThingDef ParentName="BuildingBase" Name="ISA_HornetApiaryBase">
+		<defName>ISA_HornetApiary</defName>
+		<label>hornet apiary</label>
+		<description>An apiary occupied by hornets. It is less dangerous than a natural hive, whilst also being much slower at producing honey. Hornet drones will protect it to the best of their ability, swarming and stinging anything that stays in their territory for too long.\n\nHornets can reproduce and quickly breed without a queen, making them a common and dangerous pest.</description>
 		<thingClass>Building</thingClass>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
-			<texPath>Things/Building/DeathstingerApiary/DeathstingerApiary</texPath>
+			<texPath>Things/Building/HornetApiary/HornetApiary</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2,2)</drawSize>
@@ -123,7 +123,7 @@
           <li>Woody</li>
         </stuffCategories>
 		<costList>
-			<ISA_DeathstingerLarvae>3</ISA_DeathstingerLarvae>
+			<ISA_HornetLarvae>3</ISA_HornetLarvae>
 		</costList>
 		
 		<statBases>
@@ -148,7 +148,7 @@
 			</li>
 			<li Class="CompProperties_Spawner">
         		<requiresPower>false</requiresPower>
-        		<thingToSpawn>ISA_DeathstingerLarvae</thingToSpawn>
+        		<thingToSpawn>ISA_HornetLarvae</thingToSpawn>
         		<spawnCount>1</spawnCount>
         		<spawnIntervalRange><min>2,700,000</min><max>3,600,000</max></spawnIntervalRange> <!-- This is roughly ever 3/4 to one year or so -->
         		<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
@@ -171,7 +171,7 @@
 				<range>2</range>
 			</li>
             <li Class="CompProperties_MoteEmitter">
-               <mote>ISA_DeathstingerSwarm</mote>
+               <mote>ISA_HornetSwarm</mote>
                <emissionInterval>90</emissionInterval>
             </li>
 	  
