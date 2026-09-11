@@ -2,7 +2,7 @@
 <Defs>
   
 <ThingDef ParentName="MoteBase">
-    <defName>ISA_DeathstingerSwarm</defName>
+    <defName>ISA_HornetSwarm</defName>
     <graphicData>
       <texPath>Things/Mote/StingerSwarm</texPath>
 	  <graphicClass>Graphic_MoteRandom</graphicClass>
@@ -19,13 +19,13 @@
   </ThingDef>
   
     <EffecterDef>
-    <defName>ISA_DeathstingerSwarmed</defName>
+    <defName>ISA_HornetSwarmed</defName>
     <offsetMode>Free</offsetMode>
     <children>
 
       <li>
         <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
-        <moteDef>ISA_DeathstingerSwarm</moteDef>
+        <moteDef>ISA_HornetSwarm</moteDef>
         <burstCount>1</burstCount>
         <ticksBetweenMotes>5000</ticksBetweenMotes>
         <positionRadius>0</positionRadius>
@@ -45,7 +45,7 @@
     <defName>ISA_Swarmed</defName>
     <label>swarm</label>
     <hediffClass>HediffWithComps</hediffClass>
-    <description>Swarmed by deathstingers. They will slow people down, and occassionally sting.</description>
+    <description>Swarmed by hornets. They will slow people down, and occassionally sting.</description>
 	<defaultLabelColor>(118,112,110)</defaultLabelColor>
     <everCurableByItem>false</everCurableByItem>
     <scenarioCanAdd>false</scenarioCanAdd>
@@ -61,7 +61,7 @@
        </li>
 	
 	  <li Class="HediffCompProperties_Effecter">
-        <stateEffecter>ISA_DeathstingerSwarmed</stateEffecter>
+        <stateEffecter>ISA_HornetSwarmed</stateEffecter>
         <severityIndices>0~1</severityIndices>
       </li>
     </comps>
@@ -94,7 +94,7 @@
     <defName>ISA_DeathStinged</defName>
     <label>black rash</label>
     <hediffClass>HediffWithComps</hediffClass>
-    <description>A painful dark rash caused by the poison of a deathstinger drone. Will disappear after one to two days.</description>
+    <description>A painful dark rash caused by the poison of a hornet drone. Will disappear after one to two days.</description>
 	<defaultLabelColor>(118,112,110)</defaultLabelColor>
     <everCurableByItem>false</everCurableByItem>
     <scenarioCanAdd>false</scenarioCanAdd>
