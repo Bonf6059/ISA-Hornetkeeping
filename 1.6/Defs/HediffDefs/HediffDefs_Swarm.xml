@@ -5,7 +5,7 @@
     <defName>ISA_AngrySwarm</defName>
     <label>black swarm</label>
     <hediffClass>HediffWithComps</hediffClass>
-    <description>Swarmed by angry deathstingers. They will slow the movement, and combat capacities of those unlucky enough to be near.</description>
+    <description>Swarmed by angry hornets. They will slow the movement, and combat capacities of those unlucky enough to be near.</description>
 	<defaultLabelColor>(118,112,110)</defaultLabelColor>
     <everCurableByItem>false</everCurableByItem>
     <scenarioCanAdd>false</scenarioCanAdd>
@@ -21,7 +21,7 @@
        </li>
 	
 	  <li Class="HediffCompProperties_Effecter">
-        <stateEffecter>ISA_DeathstingerSwarmed</stateEffecter>
+        <stateEffecter>ISA_HornetSwarmed</stateEffecter>
         <severityIndices>0~1</severityIndices>
       </li>
     </comps>
