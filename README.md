@@ -8,6 +8,9 @@ This mod adds honey and mead and stuff to the mod [ISA] Medieval.
 
 # Old updates
 
+14/10/2026
+- Added 1.7 support
+
 11/09/2026
 - Removed unused textures
 - Renamed "deathstinger" to "hornet"
