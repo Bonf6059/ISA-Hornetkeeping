@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchProjectDef>
+		<defName>ISA_Hornetkeeping</defName>
+		<label>hornetkeeping</label>
+		<description>Learn to create specialized apiaries, brew mead out of hornet honey and bottle up hornets to spread chaos amongst enemy lines.</description>
+		<baseCost>500</baseCost>
+		<tab>ISA_MedievalResearchTab</tab>
+		<techLevel>Medieval</techLevel>
+        <researchViewX>2</researchViewX>
+        <researchViewY>1</researchViewY>
+		<prerequisites>
+			<li>ISA_Beekeeping</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>ISA_Beekeeping</defName>
+		<label>beekeeping</label>
+		<description>Learn to create specialized apiaries, extract honey and brew mead out of bee honey.</description>
+		<baseCost>500</baseCost>
+		<tab>ISA_MedievalResearchTab</tab>
+		<techLevel>Medieval</techLevel>
+        <researchViewX>1</researchViewX>
+        <researchViewY>1</researchViewY>
+		<prerequisites>
+			<li>ISA_Agriculture</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	
+</Defs>
+
+
+

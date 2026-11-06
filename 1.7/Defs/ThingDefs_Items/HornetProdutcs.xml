@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Hornet Honeycomb -->
+  
+<ThingDef ParentName="ISA_HoneycombBase">
+    <defName>ISA_HornetHoneycomb</defName>
+    <label>hornet honeycomb</label>
+    <description>Honeycomb from a hornethive or hornet apiary. While edible, it is better when processed separately into honey and wax. This can be done at cooking sites. While longlasting, it does not last as long as pure honey.</description>
+    <graphicData>
+      <texPath>Things/Hornet/HornetHoneycomb</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MarketValue>8.0</MarketValue> <!-- Can be used like meat in recipes -->
+      <Mass>0.045</Mass>
+      <MaxHitPoints>60</MaxHitPoints>
+      <Flammability>0.2</Flammability>
+      <Nutrition>0.1</Nutrition>
+      <FoodPoisonChanceFixedHuman>0.2</FoodPoisonChanceFixedHuman>
+    </statBases>
+</ThingDef>
+	
+<!-- Hornet Honey-->
+	  
+	<ThingDef ParentName="DrugBase">
+		<defName>ISA_HornetHoney</defName>
+		<label>hornet honey</label>
+		<description>A deathly sweet liquid secreted by the black hornets. Consuming it leads to numbing the sensation of pain but sharpening one's reflexes, improving melee and shooting abilities.</description>
+		<descriptionHyperlinks>
+			<HediffDef>ISA_HornetHoneyHigh</HediffDef>
+			<HediffDef>ISA_HornetHoneyAddiction</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Hornet/HornetHoney</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<statBases>
+			<WorkToMake>600</WorkToMake>
+			<MarketValue>53</MarketValue>
+			<Mass>0.1</Mass>
+		</statBases>
+		<techLevel>Medieval</techLevel>
+		<ingestible>
+			<joyKind>Chemical</joyKind>
+			<joy>0.40</joy>
+			<drugCategory>Hard</drugCategory>
+			<foodType>AnimalProduct, Fluid</foodType>
+			<baseIngestTicks>80</baseIngestTicks>
+			<ingestSound>Ingest_Inject</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.18,0,0)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+			<ingestCommandString>Consume {0}</ingestCommandString>
+			<ingestReportString>Consuming {0}.</ingestReportString>
+			<useEatingSpeedStat>false</useEatingSpeedStat>
+			<chairSearchRadius>0</chairSearchRadius>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>ISA_HornetHoneyHigh</hediffDef>
+					<severity>0.5</severity>
+					<toleranceChemical>ISA_HornetHoney</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+					<need>Rest</need>
+					<offset>0.4</offset>
+					<toleranceChemical>ISA_HornetHoney</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetPsyfocus">
+					<offset>0.15</offset>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>ISA_HornetHoney</chemical>
+				<addictiveness>0.026</addictiveness>
+				<existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+				<listOrder>200</listOrder>
+				<overdoseSeverityOffset>0.18~0.35</overdoseSeverityOffset>
+				<largeOverdoseChance>0.005</largeOverdoseChance>
+			</li>
+		</comps>
+	</ThingDef>
+
+<!-- HornetLarvae -->
+	
+ <ThingDef ParentName="ResourceBase">
+    <defName>ISA_HornetLarvae</defName>
+    <label>hornet larvae</label>
+    <description>The bottled larvae extracted from a hornet hive. Contrary to common beliefs, hornet hives can operate and thrive without a queen. Can be used to make a hornet apiary.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Hornet/Misc/HornetLarvae</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>240</MarketValue>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>0.9</Mass>
+      <Flammability>1</Flammability>
+      <DeteriorationRate>2</DeteriorationRate>
+    </statBases>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <stackLimit>5</stackLimit>
+    <thingCategories>
+      <li>ItemsMisc</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingSetMakerTags>
+      <li>AnimalPart</li>
+    </thingSetMakerTags>
+  </ThingDef>
+	
+</Defs>
